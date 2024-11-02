@@ -5,6 +5,17 @@ let directPlantDate = document.querySelector("#plant-date"); // Ideally in ISO f
 let emergence = document.querySelector("#emergence");
 let calculateButton = document.querySelector("#calculate-button");
 
+let tempData = {};
+
+// Load temperature data from JSON file
+fetch("Columbia_Temp_Data.json")
+  .then((response) => response.json())
+  .then((data) => {
+    tempData = data;
+    console.log("Temperature data loaded:", tempData);
+  })
+  .catch((error) => console.error("Error loading temperature data:", error));
+
 const baseTemps = {
   corn: 50, // Base GDD 50°F
   soybean: 50, // Base GDD 50°F
@@ -34,33 +45,31 @@ const emergenceGDD = {
 // let lat = 2389752; // Temp vals, set from function calls
 // let long = 1492385702;
 
-gddAccum = 0;
-
 calculateButton.addEventListener("click", function () {
+  console.log("Hi!");
+
+  let gddAccum = 0;
   let plantDate = new Date(directPlantDate.value);
+  const centralOffset = plantDate.getTimezoneOffset() / 60 + 6; // Adjust by 6 hours from UTC
+  plantDate.setHours(plantDate.getHours() + centralOffset);
   let endDate = new Date(plantDate);
   endDate.setDate(plantDate.getDate() + 8);
 
-  let date = new Date(startDate);
+  let date = new Date(plantDate);
+
   while (date <= endDate) {
     let tempEntry = getTempData(date);
-    if (tempEntry) {
-      // Check if tempEntry is not null
-      let highTemp = tempEntry.high;
-      let lowTemp = tempEntry.low;
-    }
+    let highTemp = tempEntry.high;
+    let lowTemp = tempEntry.low;
     gddAccum += calcGDD(highTemp, lowTemp, plant.value);
     date.setDate(date.getDate() + 1);
   }
   let daysTillEmerge = 0;
 
-  while (gddAccum < emergenceGDD[plant]) {
+  while (gddAccum < emergenceGDD[plant.value]) {
     let tempEntry = getTempData(date);
-    if (tempEntry) {
-      // Check if tempEntry is not null
-      let highTemp = tempEntry.high;
-      let lowTemp = tempEntry.low;
-    }
+    let highTemp = tempEntry.high;
+    let lowTemp = tempEntry.low;
     gddAccum += calcGDD(highTemp, lowTemp, plant.value);
     daysTillEmerge++;
     date.setDate(date.getDate() + 1);
@@ -69,11 +78,10 @@ calculateButton.addEventListener("click", function () {
   emergence.textContent = `You have ${daysTillEmerge} days till emergence.`;
 });
 
+// Helper functions begin HERE
 function calcGDD(highTemp, lowTemp, plant) {
   return (highTemp + lowTemp) / 2 + baseTemps[plant];
 }
-
-const tempData = JSON.parse(localStorage.getItem("Columbia_Temp_Data.json"));
 
 function getTempData(date) {
   let formattedDate = date.toISOString().split("T")[0];

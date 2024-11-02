@@ -1,850 +1,850 @@
 {
-    "2024-04-01": {
-        "HighTemp": 71.0,
-        "LowTemp": 56.0
-    },
-    "2024-04-02": {
-        "HighTemp": 61.0,
-        "LowTemp": 41.0
-    },
-    "2024-04-03": {
-        "HighTemp": 53.0,
-        "LowTemp": 37.0
-    },
-    "2024-04-04": {
-        "HighTemp": 53.0,
-        "LowTemp": 37.0
-    },
-    "2024-04-05": {
-        "HighTemp": 57.0,
-        "LowTemp": 32.0
-    },
-    "2024-04-06": {
-        "HighTemp": 64.0,
-        "LowTemp": 40.0
-    },
-    "2024-04-07": {
-        "HighTemp": 72.0,
-        "LowTemp": 50.0
-    },
-    "2024-04-08": {
-        "HighTemp": 79.0,
-        "LowTemp": 51.0
-    },
-    "2024-04-09": {
-        "HighTemp": 68.0,
-        "LowTemp": 50.0
-    },
-    "2024-04-10": {
-        "HighTemp": 64.0,
-        "LowTemp": 51.0
-    },
-    "2024-04-11": {
-        "HighTemp": 64.0,
-        "LowTemp": 51.0
-    },
-    "2024-04-12": {
-        "HighTemp": 68.0,
-        "LowTemp": 46.0
-    },
-    "2024-04-13": {
-        "HighTemp": 85.0,
-        "LowTemp": 43.0
-    },
-    "2024-04-14": {
-        "HighTemp": 86.0,
-        "LowTemp": 65.0
-    },
-    "2024-04-15": {
-        "HighTemp": 85.0,
-        "LowTemp": 61.0
-    },
-    "2024-04-16": {
-        "HighTemp": 81.0,
-        "LowTemp": 68.0
-    },
-    "2024-04-17": {
-        "HighTemp": 79.0,
-        "LowTemp": 60.0
-    },
-    "2024-04-18": {
-        "HighTemp": 80.0,
-        "LowTemp": 48.0
-    },
-    "2024-04-19": {
-        "HighTemp": 62.0,
-        "LowTemp": 41.0
-    },
-    "2024-04-20": {
-        "HighTemp": 55.0,
-        "LowTemp": 43.0
-    },
-    "2024-04-21": {
-        "HighTemp": 59.0,
-        "LowTemp": 41.0
-    },
-    "2024-04-22": {
-        "HighTemp": 69.0,
-        "LowTemp": 38.0
-    },
-    "2024-04-23": {
-        "HighTemp": 68.0,
-        "LowTemp": 52.0
-    },
-    "2024-04-24": {
-        "HighTemp": 71.0,
-        "LowTemp": 41.0
-    },
-    "2024-04-25": {
-        "HighTemp": 64.0,
-        "LowTemp": 48.0
-    },
-    "2024-04-26": {
-        "HighTemp": 69.0,
-        "LowTemp": 52.0
-    },
-    "2024-04-27": {
-        "HighTemp": 75.0,
-        "LowTemp": 61.0
-    },
-    "2024-04-28": {
-        "HighTemp": 71.0,
-        "LowTemp": 59.0
-    },
-    "2024-04-29": {
-        "HighTemp": 74.0,
-        "LowTemp": 56.0
-    },
-    "2024-04-30": {
-        "HighTemp": 84.0,
-        "LowTemp": 54.0
-    },
-    "2024-05-01": {
-        "HighTemp": 78.0,
-        "LowTemp": 64.0
-    },
-    "2024-05-02": {
-        "HighTemp": 81.0,
-        "LowTemp": 62.0
-    },
-    "2024-05-03": {
-        "HighTemp": 74.0,
-        "LowTemp": 57.0
-    },
-    "2024-05-04": {
-        "HighTemp": 78.0,
-        "LowTemp": 57.0
-    },
-    "2024-05-05": {
-        "HighTemp": 64.0,
-        "LowTemp": 49.0
-    },
-    "2024-05-06": {
-        "HighTemp": 78.0,
-        "LowTemp": 59.0
-    },
-    "2024-05-07": {
-        "HighTemp": 79.0,
-        "LowTemp": 58.0
-    },
-    "2024-05-08": {
-        "HighTemp": 70.0,
-        "LowTemp": 51.0
-    },
-    "2024-05-09": {
-        "HighTemp": 74.0,
-        "LowTemp": 56.0
-    },
-    "2024-05-10": {
-        "HighTemp": 72.0,
-        "LowTemp": 53.0
-    },
-    "2024-05-11": {
-        "HighTemp": 78.0,
-        "LowTemp": 55.0
-    },
-    "2024-05-12": {
-        "HighTemp": 82.0,
-        "LowTemp": 56.0
-    },
-    "2024-05-13": {
-        "HighTemp": 72.0,
-        "LowTemp": 61.0
-    },
-    "2024-05-14": {
-        "HighTemp": 70.0,
-        "LowTemp": 61.0
-    },
-    "2024-05-15": {
-        "HighTemp": 74.0,
-        "LowTemp": 61.0
-    },
-    "2024-05-16": {
-        "HighTemp": 76.0,
-        "LowTemp": 63.0
-    },
-    "2024-05-17": {
-        "HighTemp": 82.0,
-        "LowTemp": 59.0
-    },
-    "2024-05-18": {
-        "HighTemp": 85.0,
-        "LowTemp": 62.0
-    },
-    "2024-05-19": {
-        "HighTemp": 88.0,
-        "LowTemp": 67.0
-    },
-    "2024-05-20": {
-        "HighTemp": 85.0,
-        "LowTemp": 68.0
-    },
-    "2024-05-21": {
-        "HighTemp": 88.0,
-        "LowTemp": 65.0
-    },
-    "2024-05-22": {
-        "HighTemp": 75.0,
-        "LowTemp": 59.0
-    },
-    "2024-05-23": {
-        "HighTemp": 82.0,
-        "LowTemp": 56.0
-    },
-    "2024-05-24": {
-        "HighTemp": 87.0,
-        "LowTemp": 64.0
-    },
-    "2024-05-25": {
-        "HighTemp": 80.0,
-        "LowTemp": 56.0
-    },
-    "2024-05-26": {
-        "HighTemp": 82.0,
-        "LowTemp": 62.0
-    },
-    "2024-05-27": {
-        "HighTemp": 81.0,
-        "LowTemp": 62.0
-    },
-    "2024-05-28": {
-        "HighTemp": 81.0,
-        "LowTemp": 58.0
-    },
-    "2024-05-29": {
-        "HighTemp": 77.0,
-        "LowTemp": 57.0
-    },
-    "2024-05-30": {
-        "HighTemp": 80.0,
-        "LowTemp": 59.0
-    },
-    "2024-05-31": {
-        "HighTemp": 78.0,
-        "LowTemp": 61.0
-    },
-    "2024-06-01": {
-        "HighTemp": 78.0,
-        "LowTemp": 65.0
-    },
-    "2024-06-02": {
-        "HighTemp": 84.0,
-        "LowTemp": 62.0
-    },
-    "2024-06-03": {
-        "HighTemp": 85.0,
-        "LowTemp": 68.0
-    },
-    "2024-06-04": {
-        "HighTemp": 83.0,
-        "LowTemp": 68.0
-    },
-    "2024-06-05": {
-        "HighTemp": 81.0,
-        "LowTemp": 66.0
-    },
-    "2024-06-06": {
-        "HighTemp": 83.0,
-        "LowTemp": 63.0
-    },
-    "2024-06-07": {
-        "HighTemp": 89.0,
-        "LowTemp": 56.0
-    },
-    "2024-06-08": {
-        "HighTemp": 87.0,
-        "LowTemp": 66.0
-    },
-    "2024-06-09": {
-        "HighTemp": 81.0,
-        "LowTemp": 61.0
-    },
-    "2024-06-10": {
-        "HighTemp": 78.0,
-        "LowTemp": 58.0
-    },
-    "2024-06-11": {
-        "HighTemp": 82.0,
-        "LowTemp": 57.0
-    },
-    "2024-06-12": {
-        "HighTemp": 88.0,
-        "LowTemp": 65.0
-    },
-    "2024-06-13": {
-        "HighTemp": 92.0,
-        "LowTemp": 69.0
-    },
-    "2024-06-14": {
-        "HighTemp": 89.0,
-        "LowTemp": 69.0
-    },
-    "2024-06-15": {
-        "HighTemp": 90.0,
-        "LowTemp": 65.0
-    },
-    "2024-06-16": {
-        "HighTemp": 93.0,
-        "LowTemp": 76.0
-    },
-    "2024-06-17": {
-        "HighTemp": 94.0,
-        "LowTemp": 76.0
-    },
-    "2024-06-18": {
-        "HighTemp": 91.0,
-        "LowTemp": 73.0
-    },
-    "2024-06-19": {
-        "HighTemp": 90.0,
-        "LowTemp": 72.0
-    },
-    "2024-06-20": {
-        "HighTemp": 91.0,
-        "LowTemp": 73.0
-    },
-    "2024-06-21": {
-        "HighTemp": 91.0,
-        "LowTemp": 72.0
-    },
-    "2024-06-22": {
-        "HighTemp": 92.0,
-        "LowTemp": 74.0
-    },
-    "2024-06-23": {
-        "HighTemp": 92.0,
-        "LowTemp": 74.0
-    },
-    "2024-06-24": {
-        "HighTemp": 98.0,
-        "LowTemp": 69.0
-    },
-    "2024-06-25": {
-        "HighTemp": 98.0,
-        "LowTemp": 70.0
-    },
-    "2024-06-26": {
-        "HighTemp": 86.0,
-        "LowTemp": 67.0
-    },
-    "2024-06-27": {
-        "HighTemp": 88.0,
-        "LowTemp": 66.0
-    },
-    "2024-06-28": {
-        "HighTemp": 85.0,
-        "LowTemp": 72.0
-    },
-    "2024-06-29": {
-        "HighTemp": 91.0,
-        "LowTemp": 72.0
-    },
-    "2024-06-30": {
-        "HighTemp": 79.0,
-        "LowTemp": 67.0
-    },
-    "2024-07-01": {
-        "HighTemp": 75.0,
-        "LowTemp": 62.0
-    },
-    "2024-07-02": {
-        "HighTemp": 93.0,
-        "LowTemp": 68.0
-    },
-    "2024-07-03": {
-        "HighTemp": 85.0,
-        "LowTemp": 70.0
-    },
-    "2024-07-04": {
-        "HighTemp": 87.0,
-        "LowTemp": 68.0
-    },
-    "2024-07-05": {
-        "HighTemp": 81.0,
-        "LowTemp": 68.0
-    },
-    "2024-07-06": {
-        "HighTemp": 86.0,
-        "LowTemp": 65.0
-    },
-    "2024-07-07": {
-        "HighTemp": 87.0,
-        "LowTemp": 66.0
-    },
-    "2024-07-08": {
-        "HighTemp": 86.0,
-        "LowTemp": 65.0
-    },
-    "2024-07-09": {
-        "HighTemp": 73.0,
-        "LowTemp": 66.0
-    },
-    "2024-07-10": {
-        "HighTemp": 87.0,
-        "LowTemp": 66.0
-    },
-    "2024-07-11": {
-        "HighTemp": 86.0,
-        "LowTemp": 65.0
-    },
-    "2024-07-12": {
-        "HighTemp": 88.0,
-        "LowTemp": 71.0
-    },
-    "2024-07-13": {
-        "HighTemp": 87.0,
-        "LowTemp": 74.0
-    },
-    "2024-07-14": {
-        "HighTemp": 92.0,
-        "LowTemp": 75.0
-    },
-    "2024-07-15": {
-        "HighTemp": 94.0,
-        "LowTemp": 77.0
-    },
-    "2024-07-16": {
-        "HighTemp": 85.0,
-        "LowTemp": 71.0
-    },
-    "2024-07-17": {
-        "HighTemp": 85.0,
-        "LowTemp": 68.0
-    },
-    "2024-07-18": {
-        "HighTemp": 80.0,
-        "LowTemp": 61.0
-    },
-    "2024-07-19": {
-        "HighTemp": 81.0,
-        "LowTemp": 60.0
-    },
-    "2024-07-20": {
-        "HighTemp": 78.0,
-        "LowTemp": 61.0
-    },
-    "2024-07-21": {
-        "HighTemp": 80.0,
-        "LowTemp": 63.0
-    },
-    "2024-07-22": {
-        "HighTemp": 83.0,
-        "LowTemp": 62.0
-    },
-    "2024-07-23": {
-        "HighTemp": 87.0,
-        "LowTemp": 65.0
-    },
-    "2024-07-24": {
-        "HighTemp": 89.0,
-        "LowTemp": 65.0
-    },
-    "2024-07-25": {
-        "HighTemp": 91.0,
-        "LowTemp": 69.0
-    },
-    "2024-07-26": {
-        "HighTemp": 89.0,
-        "LowTemp": 72.0
-    },
-    "2024-07-27": {
-        "HighTemp": 83.0,
-        "LowTemp": 70.0
-    },
-    "2024-07-28": {
-        "HighTemp": 88.0,
-        "LowTemp": 69.0
-    },
-    "2024-07-29": {
-        "HighTemp": 94.0,
-        "LowTemp": 75.0
-    },
-    "2024-07-30": {
-        "HighTemp": 94.0,
-        "LowTemp": 77.0
-    },
-    "2024-07-31": {
-        "HighTemp": 95.0,
-        "LowTemp": 77.0
-    },
-    "2024-08-01": {
-        "HighTemp": 91.0,
-        "LowTemp": 72.0
-    },
-    "2024-08-02": {
-        "HighTemp": 89.0,
-        "LowTemp": 72.0
-    },
-    "2024-08-03": {
-        "HighTemp": 92.0,
-        "LowTemp": 68.0
-    },
-    "2024-08-04": {
-        "HighTemp": 95.0,
-        "LowTemp": 71.0
-    },
-    "2024-08-05": {
-        "HighTemp": 95.0,
-        "LowTemp": 74.0
-    },
-    "2024-08-06": {
-        "HighTemp": 85.0,
-        "LowTemp": 67.0
-    },
-    "2024-08-07": {
-        "HighTemp": 80.0,
-        "LowTemp": 66.0
-    },
-    "2024-08-08": {
-        "HighTemp": 80.0,
-        "LowTemp": 64.0
-    },
-    "2024-08-09": {
-        "HighTemp": 77.0,
-        "LowTemp": 60.0
-    },
-    "2024-08-10": {
-        "HighTemp": 79.0,
-        "LowTemp": 56.0
-    },
-    "2024-08-11": {
-        "HighTemp": 81.0,
-        "LowTemp": 63.0
-    },
-    "2024-08-12": {
-        "HighTemp": 72.0,
-        "LowTemp": 67.0
-    },
-    "2024-08-13": {
-        "HighTemp": 76.0,
-        "LowTemp": 67.0
-    },
-    "2024-08-14": {
-        "HighTemp": 83.0,
-        "LowTemp": 70.0
-    },
-    "2024-08-15": {
-        "HighTemp": 90.0,
-        "LowTemp": 73.0
-    },
-    "2024-08-16": {
-        "HighTemp": 93.0,
-        "LowTemp": 72.0
-    },
-    "2024-08-17": {
-        "HighTemp": 88.0,
-        "LowTemp": 70.0
-    },
-    "2024-08-18": {
-        "HighTemp": 85.0,
-        "LowTemp": 68.0
-    },
-    "2024-08-19": {
-        "HighTemp": 84.0,
-        "LowTemp": 66.0
-    },
-    "2024-08-20": {
-        "HighTemp": 79.0,
-        "LowTemp": 61.0
-    },
-    "2024-08-21": {
-        "HighTemp": 76.0,
-        "LowTemp": 60.0
-    },
-    "2024-08-22": {
-        "HighTemp": 78.0,
-        "LowTemp": 54.0
-    },
-    "2024-08-23": {
-        "HighTemp": 85.0,
-        "LowTemp": 56.0
-    },
-    "2024-08-24": {
-        "HighTemp": 81.0,
-        "LowTemp": 70.0
-    },
-    "2024-08-25": {
-        "HighTemp": 93.0,
-        "LowTemp": 70.0
-    },
-    "2024-08-26": {
-        "HighTemp": 98.0,
-        "LowTemp": 74.0
-    },
-    "2024-08-27": {
-        "HighTemp": 98.0,
-        "LowTemp": 76.0
-    },
-    "2024-08-28": {
-        "HighTemp": 90.0,
-        "LowTemp": 72.0
-    },
-    "2024-08-29": {
-        "HighTemp": 95.0,
-        "LowTemp": 72.0
-    },
-    "2024-08-30": {
-        "HighTemp": 93.0,
-        "LowTemp": 73.0
-    },
-    "2024-08-31": {
-        "HighTemp": 86.0,
-        "LowTemp": 67.0
-    },
-    "2024-09-01": {
-        "HighTemp": 88.0,
-        "LowTemp": 60.0
-    },
-    "2024-09-02": {
-        "HighTemp": 79.0,
-        "LowTemp": 57.0
-    },
-    "2024-09-03": {
-        "HighTemp": 77.0,
-        "LowTemp": 57.0
-    },
-    "2024-09-04": {
-        "HighTemp": 85.0,
-        "LowTemp": 54.0
-    },
-    "2024-09-05": {
-        "HighTemp": 92.0,
-        "LowTemp": 60.0
-    },
-    "2024-09-06": {
-        "HighTemp": 79.0,
-        "LowTemp": 58.0
-    },
-    "2024-09-07": {
-        "HighTemp": 73.0,
-        "LowTemp": 50.0
-    },
-    "2024-09-08": {
-        "HighTemp": 73.0,
-        "LowTemp": 44.0
-    },
-    "2024-09-09": {
-        "HighTemp": 82.0,
-        "LowTemp": 48.0
-    },
-    "2024-09-10": {
-        "HighTemp": 83.0,
-        "LowTemp": 50.0
-    },
-    "2024-09-11": {
-        "HighTemp": 88.0,
-        "LowTemp": 59.0
-    },
-    "2024-09-12": {
-        "HighTemp": 87.0,
-        "LowTemp": 64.0
-    },
-    "2024-09-13": {
-        "HighTemp": 73.0,
-        "LowTemp": 65.0
-    },
-    "2024-09-14": {
-        "HighTemp": 87.0,
-        "LowTemp": 67.0
-    },
-    "2024-09-15": {
-        "HighTemp": 88.0,
-        "LowTemp": 66.0
-    },
-    "2024-09-16": {
-        "HighTemp": 87.0,
-        "LowTemp": 69.0
-    },
-    "2024-09-17": {
-        "HighTemp": 89.0,
-        "LowTemp": 63.0
-    },
-    "2024-09-18": {
-        "HighTemp": 89.0,
-        "LowTemp": 65.0
-    },
-    "2024-09-19": {
-        "HighTemp": 92.0,
-        "LowTemp": 66.0
-    },
-    "2024-09-20": {
-        "HighTemp": 94.0,
-        "LowTemp": 72.0
-    },
-    "2024-09-21": {
-        "HighTemp": 80.0,
-        "LowTemp": 71.0
-    },
-    "2024-09-22": {
-        "HighTemp": 78.0,
-        "LowTemp": 62.0
-    },
-    "2024-09-23": {
-        "HighTemp": 68.0,
-        "LowTemp": 61.0
-    },
-    "2024-09-24": {
-        "HighTemp": 71.0,
-        "LowTemp": 59.0
-    },
-    "2024-09-25": {
-        "HighTemp": 78.0,
-        "LowTemp": 56.0
-    },
-    "2024-09-26": {
-        "HighTemp": 79.0,
-        "LowTemp": 55.0
-    },
-    "2024-09-27": {
-        "HighTemp": 70.0,
-        "LowTemp": 61.0
-    },
-    "2024-09-28": {
-        "HighTemp": 78.0,
-        "LowTemp": 62.0
-    },
-    "2024-09-29": {
-        "HighTemp": 81.0,
-        "LowTemp": 61.0
-    },
-    "2024-09-30": {
-        "HighTemp": 84.0,
-        "LowTemp": 61.0
-    },
-    "2024-10-01": {
-        "HighTemp": 72.0,
-        "LowTemp": 49.0
-    },
-    "2024-10-02": {
-        "HighTemp": 74.0,
-        "LowTemp": 44.0
-    },
-    "2024-10-03": {
-        "HighTemp": 87.0,
-        "LowTemp": 56.0
-    },
-    "2024-10-04": {
-        "HighTemp": 83.0,
-        "LowTemp": 60.0
-    },
-    "2024-10-05": {
-        "HighTemp": 89.0,
-        "LowTemp": 62.0
-    },
-    "2024-10-06": {
-        "HighTemp": 79.0,
-        "LowTemp": 56.0
-    },
-    "2024-10-07": {
-        "HighTemp": 72.0,
-        "LowTemp": 47.0
-    },
-    "2024-10-08": {
-        "HighTemp": 74.0,
-        "LowTemp": 43.0
-    },
-    "2024-10-09": {
-        "HighTemp": 78.0,
-        "LowTemp": 46.0
-    },
-    "2024-10-10": {
-        "HighTemp": 80.0,
-        "LowTemp": 49.0
-    },
-    "2024-10-11": {
-        "HighTemp": 86.0,
-        "LowTemp": 54.0
-    },
-    "2024-10-12": {
-        "HighTemp": 90.0,
-        "LowTemp": 59.0
-    },
-    "2024-10-13": {
-        "HighTemp": 72.0,
-        "LowTemp": 51.0
-    },
-    "2024-10-14": {
-        "HighTemp": 61.0,
-        "LowTemp": 43.0
-    },
-    "2024-10-15": {
-        "HighTemp": 57.0,
-        "LowTemp": 42.0
-    },
-    "2024-10-16": {
-        "HighTemp": 62.0,
-        "LowTemp": 32.0
-    },
-    "2024-10-17": {
-        "HighTemp": 69.0,
-        "LowTemp": 38.0
-    },
-    "2024-10-18": {
-        "HighTemp": 72.0,
-        "LowTemp": 43.0
-    },
-    "2024-10-19": {
-        "HighTemp": 75.0,
-        "LowTemp": 43.0
-    },
-    "2024-10-20": {
-        "HighTemp": 80.0,
-        "LowTemp": 45.0
-    },
-    "2024-10-21": {
-        "HighTemp": 81.0,
-        "LowTemp": 50.0
-    },
-    "2024-10-22": {
-        "HighTemp": 86.0,
-        "LowTemp": 59.0
-    },
-    "2024-10-23": {
-        "HighTemp": 70.0,
-        "LowTemp": 49.0
-    },
-    "2024-10-24": {
-        "HighTemp": 75.0,
-        "LowTemp": 45.0
-    },
-    "2024-10-25": {
-        "HighTemp": 70.0,
-        "LowTemp": 49.0
-    },
-    "2024-10-26": {
-        "HighTemp": 63.0,
-        "LowTemp": 42.0
-    },
-    "2024-10-27": {
-        "HighTemp": 70.0,
-        "LowTemp": 43.0
-    },
-    "2024-10-28": {
-        "HighTemp": NaN,
-        "LowTemp": NaN
-    },
-    "2024-10-29": {
-        "HighTemp": NaN,
-        "LowTemp": NaN
-    }
+  "2024-04-01": {
+    "HighTemp": 71.0,
+    "LowTemp": 56.0
+  },
+  "2024-04-02": {
+    "HighTemp": 61.0,
+    "LowTemp": 41.0
+  },
+  "2024-04-03": {
+    "HighTemp": 53.0,
+    "LowTemp": 37.0
+  },
+  "2024-04-04": {
+    "HighTemp": 53.0,
+    "LowTemp": 37.0
+  },
+  "2024-04-05": {
+    "HighTemp": 57.0,
+    "LowTemp": 32.0
+  },
+  "2024-04-06": {
+    "HighTemp": 64.0,
+    "LowTemp": 40.0
+  },
+  "2024-04-07": {
+    "HighTemp": 72.0,
+    "LowTemp": 50.0
+  },
+  "2024-04-08": {
+    "HighTemp": 79.0,
+    "LowTemp": 51.0
+  },
+  "2024-04-09": {
+    "HighTemp": 68.0,
+    "LowTemp": 50.0
+  },
+  "2024-04-10": {
+    "HighTemp": 64.0,
+    "LowTemp": 51.0
+  },
+  "2024-04-11": {
+    "HighTemp": 64.0,
+    "LowTemp": 51.0
+  },
+  "2024-04-12": {
+    "HighTemp": 68.0,
+    "LowTemp": 46.0
+  },
+  "2024-04-13": {
+    "HighTemp": 85.0,
+    "LowTemp": 43.0
+  },
+  "2024-04-14": {
+    "HighTemp": 86.0,
+    "LowTemp": 65.0
+  },
+  "2024-04-15": {
+    "HighTemp": 85.0,
+    "LowTemp": 61.0
+  },
+  "2024-04-16": {
+    "HighTemp": 81.0,
+    "LowTemp": 68.0
+  },
+  "2024-04-17": {
+    "HighTemp": 79.0,
+    "LowTemp": 60.0
+  },
+  "2024-04-18": {
+    "HighTemp": 80.0,
+    "LowTemp": 48.0
+  },
+  "2024-04-19": {
+    "HighTemp": 62.0,
+    "LowTemp": 41.0
+  },
+  "2024-04-20": {
+    "HighTemp": 55.0,
+    "LowTemp": 43.0
+  },
+  "2024-04-21": {
+    "HighTemp": 59.0,
+    "LowTemp": 41.0
+  },
+  "2024-04-22": {
+    "HighTemp": 69.0,
+    "LowTemp": 38.0
+  },
+  "2024-04-23": {
+    "HighTemp": 68.0,
+    "LowTemp": 52.0
+  },
+  "2024-04-24": {
+    "HighTemp": 71.0,
+    "LowTemp": 41.0
+  },
+  "2024-04-25": {
+    "HighTemp": 64.0,
+    "LowTemp": 48.0
+  },
+  "2024-04-26": {
+    "HighTemp": 69.0,
+    "LowTemp": 52.0
+  },
+  "2024-04-27": {
+    "HighTemp": 75.0,
+    "LowTemp": 61.0
+  },
+  "2024-04-28": {
+    "HighTemp": 71.0,
+    "LowTemp": 59.0
+  },
+  "2024-04-29": {
+    "HighTemp": 74.0,
+    "LowTemp": 56.0
+  },
+  "2024-04-30": {
+    "HighTemp": 84.0,
+    "LowTemp": 54.0
+  },
+  "2024-05-01": {
+    "HighTemp": 78.0,
+    "LowTemp": 64.0
+  },
+  "2024-05-02": {
+    "HighTemp": 81.0,
+    "LowTemp": 62.0
+  },
+  "2024-05-03": {
+    "HighTemp": 74.0,
+    "LowTemp": 57.0
+  },
+  "2024-05-04": {
+    "HighTemp": 78.0,
+    "LowTemp": 57.0
+  },
+  "2024-05-05": {
+    "HighTemp": 64.0,
+    "LowTemp": 49.0
+  },
+  "2024-05-06": {
+    "HighTemp": 78.0,
+    "LowTemp": 59.0
+  },
+  "2024-05-07": {
+    "HighTemp": 79.0,
+    "LowTemp": 58.0
+  },
+  "2024-05-08": {
+    "HighTemp": 70.0,
+    "LowTemp": 51.0
+  },
+  "2024-05-09": {
+    "HighTemp": 74.0,
+    "LowTemp": 56.0
+  },
+  "2024-05-10": {
+    "HighTemp": 72.0,
+    "LowTemp": 53.0
+  },
+  "2024-05-11": {
+    "HighTemp": 78.0,
+    "LowTemp": 55.0
+  },
+  "2024-05-12": {
+    "HighTemp": 82.0,
+    "LowTemp": 56.0
+  },
+  "2024-05-13": {
+    "HighTemp": 72.0,
+    "LowTemp": 61.0
+  },
+  "2024-05-14": {
+    "HighTemp": 70.0,
+    "LowTemp": 61.0
+  },
+  "2024-05-15": {
+    "HighTemp": 74.0,
+    "LowTemp": 61.0
+  },
+  "2024-05-16": {
+    "HighTemp": 76.0,
+    "LowTemp": 63.0
+  },
+  "2024-05-17": {
+    "HighTemp": 82.0,
+    "LowTemp": 59.0
+  },
+  "2024-05-18": {
+    "HighTemp": 85.0,
+    "LowTemp": 62.0
+  },
+  "2024-05-19": {
+    "HighTemp": 88.0,
+    "LowTemp": 67.0
+  },
+  "2024-05-20": {
+    "HighTemp": 85.0,
+    "LowTemp": 68.0
+  },
+  "2024-05-21": {
+    "HighTemp": 88.0,
+    "LowTemp": 65.0
+  },
+  "2024-05-22": {
+    "HighTemp": 75.0,
+    "LowTemp": 59.0
+  },
+  "2024-05-23": {
+    "HighTemp": 82.0,
+    "LowTemp": 56.0
+  },
+  "2024-05-24": {
+    "HighTemp": 87.0,
+    "LowTemp": 64.0
+  },
+  "2024-05-25": {
+    "HighTemp": 80.0,
+    "LowTemp": 56.0
+  },
+  "2024-05-26": {
+    "HighTemp": 82.0,
+    "LowTemp": 62.0
+  },
+  "2024-05-27": {
+    "HighTemp": 81.0,
+    "LowTemp": 62.0
+  },
+  "2024-05-28": {
+    "HighTemp": 81.0,
+    "LowTemp": 58.0
+  },
+  "2024-05-29": {
+    "HighTemp": 77.0,
+    "LowTemp": 57.0
+  },
+  "2024-05-30": {
+    "HighTemp": 80.0,
+    "LowTemp": 59.0
+  },
+  "2024-05-31": {
+    "HighTemp": 78.0,
+    "LowTemp": 61.0
+  },
+  "2024-06-01": {
+    "HighTemp": 78.0,
+    "LowTemp": 65.0
+  },
+  "2024-06-02": {
+    "HighTemp": 84.0,
+    "LowTemp": 62.0
+  },
+  "2024-06-03": {
+    "HighTemp": 85.0,
+    "LowTemp": 68.0
+  },
+  "2024-06-04": {
+    "HighTemp": 83.0,
+    "LowTemp": 68.0
+  },
+  "2024-06-05": {
+    "HighTemp": 81.0,
+    "LowTemp": 66.0
+  },
+  "2024-06-06": {
+    "HighTemp": 83.0,
+    "LowTemp": 63.0
+  },
+  "2024-06-07": {
+    "HighTemp": 89.0,
+    "LowTemp": 56.0
+  },
+  "2024-06-08": {
+    "HighTemp": 87.0,
+    "LowTemp": 66.0
+  },
+  "2024-06-09": {
+    "HighTemp": 81.0,
+    "LowTemp": 61.0
+  },
+  "2024-06-10": {
+    "HighTemp": 78.0,
+    "LowTemp": 58.0
+  },
+  "2024-06-11": {
+    "HighTemp": 82.0,
+    "LowTemp": 57.0
+  },
+  "2024-06-12": {
+    "HighTemp": 88.0,
+    "LowTemp": 65.0
+  },
+  "2024-06-13": {
+    "HighTemp": 92.0,
+    "LowTemp": 69.0
+  },
+  "2024-06-14": {
+    "HighTemp": 89.0,
+    "LowTemp": 69.0
+  },
+  "2024-06-15": {
+    "HighTemp": 90.0,
+    "LowTemp": 65.0
+  },
+  "2024-06-16": {
+    "HighTemp": 93.0,
+    "LowTemp": 76.0
+  },
+  "2024-06-17": {
+    "HighTemp": 94.0,
+    "LowTemp": 76.0
+  },
+  "2024-06-18": {
+    "HighTemp": 91.0,
+    "LowTemp": 73.0
+  },
+  "2024-06-19": {
+    "HighTemp": 90.0,
+    "LowTemp": 72.0
+  },
+  "2024-06-20": {
+    "HighTemp": 91.0,
+    "LowTemp": 73.0
+  },
+  "2024-06-21": {
+    "HighTemp": 91.0,
+    "LowTemp": 72.0
+  },
+  "2024-06-22": {
+    "HighTemp": 92.0,
+    "LowTemp": 74.0
+  },
+  "2024-06-23": {
+    "HighTemp": 92.0,
+    "LowTemp": 74.0
+  },
+  "2024-06-24": {
+    "HighTemp": 98.0,
+    "LowTemp": 69.0
+  },
+  "2024-06-25": {
+    "HighTemp": 98.0,
+    "LowTemp": 70.0
+  },
+  "2024-06-26": {
+    "HighTemp": 86.0,
+    "LowTemp": 67.0
+  },
+  "2024-06-27": {
+    "HighTemp": 88.0,
+    "LowTemp": 66.0
+  },
+  "2024-06-28": {
+    "HighTemp": 85.0,
+    "LowTemp": 72.0
+  },
+  "2024-06-29": {
+    "HighTemp": 91.0,
+    "LowTemp": 72.0
+  },
+  "2024-06-30": {
+    "HighTemp": 79.0,
+    "LowTemp": 67.0
+  },
+  "2024-07-01": {
+    "HighTemp": 75.0,
+    "LowTemp": 62.0
+  },
+  "2024-07-02": {
+    "HighTemp": 93.0,
+    "LowTemp": 68.0
+  },
+  "2024-07-03": {
+    "HighTemp": 85.0,
+    "LowTemp": 70.0
+  },
+  "2024-07-04": {
+    "HighTemp": 87.0,
+    "LowTemp": 68.0
+  },
+  "2024-07-05": {
+    "HighTemp": 81.0,
+    "LowTemp": 68.0
+  },
+  "2024-07-06": {
+    "HighTemp": 86.0,
+    "LowTemp": 65.0
+  },
+  "2024-07-07": {
+    "HighTemp": 87.0,
+    "LowTemp": 66.0
+  },
+  "2024-07-08": {
+    "HighTemp": 86.0,
+    "LowTemp": 65.0
+  },
+  "2024-07-09": {
+    "HighTemp": 73.0,
+    "LowTemp": 66.0
+  },
+  "2024-07-10": {
+    "HighTemp": 87.0,
+    "LowTemp": 66.0
+  },
+  "2024-07-11": {
+    "HighTemp": 86.0,
+    "LowTemp": 65.0
+  },
+  "2024-07-12": {
+    "HighTemp": 88.0,
+    "LowTemp": 71.0
+  },
+  "2024-07-13": {
+    "HighTemp": 87.0,
+    "LowTemp": 74.0
+  },
+  "2024-07-14": {
+    "HighTemp": 92.0,
+    "LowTemp": 75.0
+  },
+  "2024-07-15": {
+    "HighTemp": 94.0,
+    "LowTemp": 77.0
+  },
+  "2024-07-16": {
+    "HighTemp": 85.0,
+    "LowTemp": 71.0
+  },
+  "2024-07-17": {
+    "HighTemp": 85.0,
+    "LowTemp": 68.0
+  },
+  "2024-07-18": {
+    "HighTemp": 80.0,
+    "LowTemp": 61.0
+  },
+  "2024-07-19": {
+    "HighTemp": 81.0,
+    "LowTemp": 60.0
+  },
+  "2024-07-20": {
+    "HighTemp": 78.0,
+    "LowTemp": 61.0
+  },
+  "2024-07-21": {
+    "HighTemp": 80.0,
+    "LowTemp": 63.0
+  },
+  "2024-07-22": {
+    "HighTemp": 83.0,
+    "LowTemp": 62.0
+  },
+  "2024-07-23": {
+    "HighTemp": 87.0,
+    "LowTemp": 65.0
+  },
+  "2024-07-24": {
+    "HighTemp": 89.0,
+    "LowTemp": 65.0
+  },
+  "2024-07-25": {
+    "HighTemp": 91.0,
+    "LowTemp": 69.0
+  },
+  "2024-07-26": {
+    "HighTemp": 89.0,
+    "LowTemp": 72.0
+  },
+  "2024-07-27": {
+    "HighTemp": 83.0,
+    "LowTemp": 70.0
+  },
+  "2024-07-28": {
+    "HighTemp": 88.0,
+    "LowTemp": 69.0
+  },
+  "2024-07-29": {
+    "HighTemp": 94.0,
+    "LowTemp": 75.0
+  },
+  "2024-07-30": {
+    "HighTemp": 94.0,
+    "LowTemp": 77.0
+  },
+  "2024-07-31": {
+    "HighTemp": 95.0,
+    "LowTemp": 77.0
+  },
+  "2024-08-01": {
+    "HighTemp": 91.0,
+    "LowTemp": 72.0
+  },
+  "2024-08-02": {
+    "HighTemp": 89.0,
+    "LowTemp": 72.0
+  },
+  "2024-08-03": {
+    "HighTemp": 92.0,
+    "LowTemp": 68.0
+  },
+  "2024-08-04": {
+    "HighTemp": 95.0,
+    "LowTemp": 71.0
+  },
+  "2024-08-05": {
+    "HighTemp": 95.0,
+    "LowTemp": 74.0
+  },
+  "2024-08-06": {
+    "HighTemp": 85.0,
+    "LowTemp": 67.0
+  },
+  "2024-08-07": {
+    "HighTemp": 80.0,
+    "LowTemp": 66.0
+  },
+  "2024-08-08": {
+    "HighTemp": 80.0,
+    "LowTemp": 64.0
+  },
+  "2024-08-09": {
+    "HighTemp": 77.0,
+    "LowTemp": 60.0
+  },
+  "2024-08-10": {
+    "HighTemp": 79.0,
+    "LowTemp": 56.0
+  },
+  "2024-08-11": {
+    "HighTemp": 81.0,
+    "LowTemp": 63.0
+  },
+  "2024-08-12": {
+    "HighTemp": 72.0,
+    "LowTemp": 67.0
+  },
+  "2024-08-13": {
+    "HighTemp": 76.0,
+    "LowTemp": 67.0
+  },
+  "2024-08-14": {
+    "HighTemp": 83.0,
+    "LowTemp": 70.0
+  },
+  "2024-08-15": {
+    "HighTemp": 90.0,
+    "LowTemp": 73.0
+  },
+  "2024-08-16": {
+    "HighTemp": 93.0,
+    "LowTemp": 72.0
+  },
+  "2024-08-17": {
+    "HighTemp": 88.0,
+    "LowTemp": 70.0
+  },
+  "2024-08-18": {
+    "HighTemp": 85.0,
+    "LowTemp": 68.0
+  },
+  "2024-08-19": {
+    "HighTemp": 84.0,
+    "LowTemp": 66.0
+  },
+  "2024-08-20": {
+    "HighTemp": 79.0,
+    "LowTemp": 61.0
+  },
+  "2024-08-21": {
+    "HighTemp": 76.0,
+    "LowTemp": 60.0
+  },
+  "2024-08-22": {
+    "HighTemp": 78.0,
+    "LowTemp": 54.0
+  },
+  "2024-08-23": {
+    "HighTemp": 85.0,
+    "LowTemp": 56.0
+  },
+  "2024-08-24": {
+    "HighTemp": 81.0,
+    "LowTemp": 70.0
+  },
+  "2024-08-25": {
+    "HighTemp": 93.0,
+    "LowTemp": 70.0
+  },
+  "2024-08-26": {
+    "HighTemp": 98.0,
+    "LowTemp": 74.0
+  },
+  "2024-08-27": {
+    "HighTemp": 98.0,
+    "LowTemp": 76.0
+  },
+  "2024-08-28": {
+    "HighTemp": 90.0,
+    "LowTemp": 72.0
+  },
+  "2024-08-29": {
+    "HighTemp": 95.0,
+    "LowTemp": 72.0
+  },
+  "2024-08-30": {
+    "HighTemp": 93.0,
+    "LowTemp": 73.0
+  },
+  "2024-08-31": {
+    "HighTemp": 86.0,
+    "LowTemp": 67.0
+  },
+  "2024-09-01": {
+    "HighTemp": 88.0,
+    "LowTemp": 60.0
+  },
+  "2024-09-02": {
+    "HighTemp": 79.0,
+    "LowTemp": 57.0
+  },
+  "2024-09-03": {
+    "HighTemp": 77.0,
+    "LowTemp": 57.0
+  },
+  "2024-09-04": {
+    "HighTemp": 85.0,
+    "LowTemp": 54.0
+  },
+  "2024-09-05": {
+    "HighTemp": 92.0,
+    "LowTemp": 60.0
+  },
+  "2024-09-06": {
+    "HighTemp": 79.0,
+    "LowTemp": 58.0
+  },
+  "2024-09-07": {
+    "HighTemp": 73.0,
+    "LowTemp": 50.0
+  },
+  "2024-09-08": {
+    "HighTemp": 73.0,
+    "LowTemp": 44.0
+  },
+  "2024-09-09": {
+    "HighTemp": 82.0,
+    "LowTemp": 48.0
+  },
+  "2024-09-10": {
+    "HighTemp": 83.0,
+    "LowTemp": 50.0
+  },
+  "2024-09-11": {
+    "HighTemp": 88.0,
+    "LowTemp": 59.0
+  },
+  "2024-09-12": {
+    "HighTemp": 87.0,
+    "LowTemp": 64.0
+  },
+  "2024-09-13": {
+    "HighTemp": 73.0,
+    "LowTemp": 65.0
+  },
+  "2024-09-14": {
+    "HighTemp": 87.0,
+    "LowTemp": 67.0
+  },
+  "2024-09-15": {
+    "HighTemp": 88.0,
+    "LowTemp": 66.0
+  },
+  "2024-09-16": {
+    "HighTemp": 87.0,
+    "LowTemp": 69.0
+  },
+  "2024-09-17": {
+    "HighTemp": 89.0,
+    "LowTemp": 63.0
+  },
+  "2024-09-18": {
+    "HighTemp": 89.0,
+    "LowTemp": 65.0
+  },
+  "2024-09-19": {
+    "HighTemp": 92.0,
+    "LowTemp": 66.0
+  },
+  "2024-09-20": {
+    "HighTemp": 94.0,
+    "LowTemp": 72.0
+  },
+  "2024-09-21": {
+    "HighTemp": 80.0,
+    "LowTemp": 71.0
+  },
+  "2024-09-22": {
+    "HighTemp": 78.0,
+    "LowTemp": 62.0
+  },
+  "2024-09-23": {
+    "HighTemp": 68.0,
+    "LowTemp": 61.0
+  },
+  "2024-09-24": {
+    "HighTemp": 71.0,
+    "LowTemp": 59.0
+  },
+  "2024-09-25": {
+    "HighTemp": 78.0,
+    "LowTemp": 56.0
+  },
+  "2024-09-26": {
+    "HighTemp": 79.0,
+    "LowTemp": 55.0
+  },
+  "2024-09-27": {
+    "HighTemp": 70.0,
+    "LowTemp": 61.0
+  },
+  "2024-09-28": {
+    "HighTemp": 78.0,
+    "LowTemp": 62.0
+  },
+  "2024-09-29": {
+    "HighTemp": 81.0,
+    "LowTemp": 61.0
+  },
+  "2024-09-30": {
+    "HighTemp": 84.0,
+    "LowTemp": 61.0
+  },
+  "2024-10-01": {
+    "HighTemp": 72.0,
+    "LowTemp": 49.0
+  },
+  "2024-10-02": {
+    "HighTemp": 74.0,
+    "LowTemp": 44.0
+  },
+  "2024-10-03": {
+    "HighTemp": 87.0,
+    "LowTemp": 56.0
+  },
+  "2024-10-04": {
+    "HighTemp": 83.0,
+    "LowTemp": 60.0
+  },
+  "2024-10-05": {
+    "HighTemp": 89.0,
+    "LowTemp": 62.0
+  },
+  "2024-10-06": {
+    "HighTemp": 79.0,
+    "LowTemp": 56.0
+  },
+  "2024-10-07": {
+    "HighTemp": 72.0,
+    "LowTemp": 47.0
+  },
+  "2024-10-08": {
+    "HighTemp": 74.0,
+    "LowTemp": 43.0
+  },
+  "2024-10-09": {
+    "HighTemp": 78.0,
+    "LowTemp": 46.0
+  },
+  "2024-10-10": {
+    "HighTemp": 80.0,
+    "LowTemp": 49.0
+  },
+  "2024-10-11": {
+    "HighTemp": 86.0,
+    "LowTemp": 54.0
+  },
+  "2024-10-12": {
+    "HighTemp": 90.0,
+    "LowTemp": 59.0
+  },
+  "2024-10-13": {
+    "HighTemp": 72.0,
+    "LowTemp": 51.0
+  },
+  "2024-10-14": {
+    "HighTemp": 61.0,
+    "LowTemp": 43.0
+  },
+  "2024-10-15": {
+    "HighTemp": 57.0,
+    "LowTemp": 42.0
+  },
+  "2024-10-16": {
+    "HighTemp": 62.0,
+    "LowTemp": 32.0
+  },
+  "2024-10-17": {
+    "HighTemp": 69.0,
+    "LowTemp": 38.0
+  },
+  "2024-10-18": {
+    "HighTemp": 72.0,
+    "LowTemp": 43.0
+  },
+  "2024-10-19": {
+    "HighTemp": 75.0,
+    "LowTemp": 43.0
+  },
+  "2024-10-20": {
+    "HighTemp": 80.0,
+    "LowTemp": 45.0
+  },
+  "2024-10-21": {
+    "HighTemp": 81.0,
+    "LowTemp": 50.0
+  },
+  "2024-10-22": {
+    "HighTemp": 86.0,
+    "LowTemp": 59.0
+  },
+  "2024-10-23": {
+    "HighTemp": 70.0,
+    "LowTemp": 49.0
+  },
+  "2024-10-24": {
+    "HighTemp": 75.0,
+    "LowTemp": 45.0
+  },
+  "2024-10-25": {
+    "HighTemp": 70.0,
+    "LowTemp": 49.0
+  },
+  "2024-10-26": {
+    "HighTemp": 63.0,
+    "LowTemp": 42.0
+  },
+  "2024-10-27": {
+    "HighTemp": 70.0,
+    "LowTemp": 43.0
+  },
+  "2024-10-28": {
+    "HighTemp": null,
+    "LowTemp": null
+  },
+  "2024-10-29": {
+    "HighTemp": null,
+    "LowTemp": null
+  }
 }

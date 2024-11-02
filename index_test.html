@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Plant Emergence Calculator</title>
+  </head>
+  <body>
+    <h1>Plant Emergence Calculator</h1>
+    <div class="app">
+      <form method="POST">
+        <!-- Plant Selection -->
+        <div class="form-row">
+          <label for="plant">Choose a plant:</label>
+          <select id="plant">
+            <option value="corn">Corn</option>
+            <option value="soybean">Soybean</option>
+            <option value="wheat">Wheat</option>
+            <option value="alfalfa">Alfalfa</option>
+            <option value="cotton">Cotton</option>
+            <option value="tomato">Tomato</option>
+            <option value="lettuce">Lettuce</option>
+            <option value="cucumber">Cucumber</option>
+            <option value="rice">Rice</option>
+            <option value="potato">Potato</option>
+          </select>
+
+          <!-- State and City Selection -->
+          <label for="state">State:</label>
+          <input type="text" id="state" placeholder="Enter state" />
+
+          <label for="city">City:</label>
+          <input type="text" id="city" placeholder="Enter city" />
+        </div>
+
+        <div class="form-row">
+          <!-- Planting Date -->
+          <label for="plant-date">Planting Date:</label>
+          <input type="date" id="plant-date" />
+
+          <!-- Calculate Button -->
+          <button id="calculate-button" type="button">
+            Calculate Days to Emergence
+          </button>
+
+          <label for="emergence">Emergence Date:</label>
+          <input type="text" id="emergence" />
+
+          <!-- Emergence Result Display -->
+          <p id="emergence"></p>
+        </div>
+
+        <div class="form-row"></div>
+      </form>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+</html>
