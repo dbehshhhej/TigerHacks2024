@@ -3,38 +3,16 @@ let plant = document.querySelector("#plant").value;
 let state = document.querySelector("#state").value;
 let city = document.querySelector("#city").value;
 let directPlantDate = document.querySelector("#plant-date"); // Ideally in ISO format
+let directCurrentDate = document.querySelector("#current-date");
 let emergence = document.querySelector("#emergence");
 let calculateButton = document.querySelector("#calculate-button");
 
-const daysSincePlanting = 8; // Number of days prior the present the crop was planted. Will be removed later, since the current date will be used (and days since planting is found between the planting date and the present).
+let demoMode = true; // Use to determine if function should be called!
 
-// Base temps of crops
-const baseTemps = {
-  corn: 50, // Base GDD 50°F
-  soybean: 50, // Base GDD 50°F
-  wheat: 40, // Base GDD 40°F
-  alfalfa: 41, // Base GDD 41°F
-  cotton: 60, // Base GDD 60°F
-  tomato: 50, // Base GDD 50°F
-  lettuce: 40, // Base GDD 40°F
-  cucumber: 55, // Base GDD 55°F
-  rice: 50, // Base GDD 50°F
-  potato: 45, // Base GDD 45°F
-};
-
-// Emergence GDD of crops
-const emergenceGDD = {
-  corn: 90, // Approx. 90 GDDs for corn to emerge
-  soybean: 120, // Approx. 120 GDDs for soybean
-  wheat: 180, // Approx. 180 GDDs for wheat
-  alfalfa: 200, // Approx. 200 GDDs for alfalfa
-  cotton: 200, // Approx. 200 GDDs for cotton
-  tomato: 150, // Approx. 150 GDDs for tomato
-  lettuce: 120, // Approx. 120 GDDs for lettuce
-  cucumber: 150, // Approx. 150 GDDs for cucumber
-  rice: 100, // Approx. 100 GDDs for rice
-  potato: 120, // Approx. 120 GDDs for potato
-};
+import { baseTemps, emergenceGDD } from "./constants.js";
+import { getCoordinates } from "./latlong_converter.js";
+import { projectDaysRemaining } from "./linear_projection.js";
+import { getFutureForecast } from "./future_forecast.js";
 
 // let lat = 2389752; // Temp vals, set from function calls
 // let long = 1492385702;
@@ -48,13 +26,12 @@ calculateButton.addEventListener("click", async function () {
   const centralOffset = plantDate.getTimezoneOffset() / 60; // Adjustment for time zone from default
   plantDate.setHours(plantDate.getHours() + centralOffset);
 
-  let endDate = new Date(plantDate); // New end date
-  endDate.setDate(plantDate.getDate() + daysSincePlanting);
+  let currentDate = new Date(directCurrentDate.value);
 
   let date = new Date(plantDate); // Placeholder date for calculation
 
   // Loops through PAST dates
-  while (date <= endDate) {
+  while (date <= currentDate) {
     let tempEntry = await getTempData(date); // Pulls array of temperatures from JSON
     let highTemp = tempEntry[0];
     let lowTemp = tempEntry[1];

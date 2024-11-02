@@ -1,20 +1,24 @@
 .container {
-    margin: 20px
+  margin: 20px;
 }
 
 select {
-    padding: 8px;
-    margin: 5px;
-    min-width: 150px;
+  padding: 8px;
+  margin: 5px;
+  min-width: 150px;
+}
 
+.form-row {
+  padding: 10px;
+  margin-bottom: 100px;
 }
 
 #stateSelect {
-    display: block;
-    color: black;
+  display: block;
+  color: black;
 }
 
 #citySelect {
-    display: block;
-    color: black;
+  display: block;
+  color: black;
 }

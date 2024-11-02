@@ -53,6 +53,11 @@
           <label for="plant-date">Planting Date:</label>
           <input type="date" id="plant-date" />
 
+          <label for="current-date">Current Date:</label>
+          <input type="date" id="current-date" />
+        </div>
+
+        <div class="form-row">
           <!-- Calculate Button -->
           <button id="calculate-button" type="button">
             Calculate Days to Emergence
@@ -61,12 +66,11 @@
           <label for="emergence-date">Emergence Date:</label>
           <p type="text" id="emergence"></p>
         </div>
-
-        <div class="form-row"></div>
       </form>
     </div>
 
     <!-- JavaScript File -->
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="constants.js" type="module"></script>
   </body>
 </html>
