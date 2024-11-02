@@ -3,7 +3,9 @@ body {
   font-family: Helvetica, sans-serif, cursive;
   margin: 20px;
   background-image: url(./background.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgb(66, 180, 64);
   color: #333;
   line-height: 1.6;
 }
