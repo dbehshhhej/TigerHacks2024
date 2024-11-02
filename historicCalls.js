@@ -6,6 +6,7 @@ async function saveHistoricalData(cityName, state, plantDate) {
     const data = await getCoordinates(cityName, state);
     const latitude = data.latitude;
     const longitude = data.longitude;
+    var plantDateUnix = plantDate.getTime();
 
     console.log(data);
     console.log(latitude);
@@ -17,7 +18,7 @@ async function saveHistoricalData(cityName, state, plantDate) {
           lat: latitude,
           lon: longitude,
           dates: {
-            1633046400: {
+            plantDateUnix: {
               // Unix time for 2021-10-01
               maxTemp: 20,
               minTemp: 10,
@@ -31,7 +32,9 @@ async function saveHistoricalData(cityName, state, plantDate) {
         },
       },
     };
+    console.log(data2);
 
+    //loop below
     localStorage.setItem("GDD_data", JSON.stringify(data2));
 
     var stored = JSON.parse(localStorage.getItem("GDD_data"));
@@ -46,6 +49,8 @@ async function saveHistoricalData(cityName, state, plantDate) {
       console.log("Data found");
       console.log(stored);
     }
+    //loop above
+
   } catch (error) {
     console.error("Error fetching coordinates:", error);
   }
