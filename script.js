@@ -1,7 +1,7 @@
 import { baseTemps, emergenceGDD, pestData } from "./constants.js";
 // import { getCoordinates } from "./latlong_converter.js";
 // import { projectDaysRemaining } from "./linear_projection.js";
-// import { getFutureForecast } from "./future_forecast.js";
+import { getFutureForecast } from "./future_forecast.js";
 
 // Retrieves values from HTML elements
 let plant = document.querySelector("#plant").value;
@@ -9,7 +9,7 @@ let state = document.querySelector("#state").value;
 let city = document.querySelector("#city").value;
 let directPlantDate = document.querySelector("#plant-date"); // Ideally in ISO format
 let directCurrentDate = document.querySelector("#current-date");
-let emergence = document.querySelector("#emergence");
+let emergenceBox = document.querySelector("#emergence");
 let pestsPresentBox = document.querySelector("#pests-present");
 let calculateButton = document.querySelector("#calculate-button");
 
@@ -59,7 +59,7 @@ calculateButton.addEventListener("click", async function () {
   }
 
   console.log(daysTillEmerge);
-  emergence.textContent = `You have ${daysTillEmerge} days till emergence.`; // Updates text box with emergence dates
+  updateEmergenceBox(`You have ${daysTillEmerge} days till emergence.`); // Updates text box with emergence dates
 
   updatePestsTextBox(gddAccum, pestData);
 });
@@ -69,6 +69,8 @@ calculateButton.addEventListener("click", async function () {
 function calcGDD(highTemp, lowTemp, plant) {
   return Math.max((highTemp + lowTemp) / 2 - baseTemps[plant], 0);
 }
+
+function calcAccumGDD() {}
 
 /// Pulls the temperature data from the JSON, stores the high and low temps in an array, and returns the array
 async function getTempData(date) {
@@ -106,4 +108,8 @@ function updatePestsTextBox(gddAccum, pestData) {
     pestsPresentBox.value = pestsList;
     console.log(pestsList);
   }
+}
+
+function updateEmergenceBox(message) {
+  emergenceBox.textContent = message;
 }
