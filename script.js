@@ -1,3 +1,8 @@
+import { baseTemps, emergenceGDD, pestData } from "./constants.js";
+// import { getCoordinates } from "./latlong_converter.js";
+// import { projectDaysRemaining } from "./linear_projection.js";
+// import { getFutureForecast } from "./future_forecast.js";
+
 // Retrieves values from HTML elements
 let plant = document.querySelector("#plant").value;
 let state = document.querySelector("#state").value;
@@ -5,15 +10,10 @@ let city = document.querySelector("#city").value;
 let directPlantDate = document.querySelector("#plant-date"); // Ideally in ISO format
 let directCurrentDate = document.querySelector("#current-date");
 let emergence = document.querySelector("#emergence");
-let pestsPresent = document.querySelector("#pests-present");
+let pestsPresentBox = document.querySelector("#pests-present");
 let calculateButton = document.querySelector("#calculate-button");
 
 let demoMode = true; // Use to determine if function should be called!
-
-import { baseTemps, emergenceGDD, pestData } from "./constants.js";
-// import { getCoordinates } from "./latlong_converter.js";
-// import { projectDaysRemaining } from "./linear_projection.js";
-// import { getFutureForecast } from "./future_forecast.js";
 
 // let lat = 2389752; // Temp vals, set from function calls
 // let long = 1492385702;
@@ -60,6 +60,8 @@ calculateButton.addEventListener("click", async function () {
 
   console.log(daysTillEmerge);
   emergence.textContent = `You have ${daysTillEmerge} days till emergence.`; // Updates text box with emergence dates
+
+  updatePestsTextBox(gddAccum, pestData);
 });
 
 // Helper functions begin HERE
@@ -80,26 +82,28 @@ async function getTempData(date) {
   return tempEntry;
 }
 
-function getPestsPresent(AccumGDD, pestData) {
+function getPestsPresent(gddAccum, pestData) {
   let pestsPresent = [];
+
   for (const pest of pestData) {
-    if (
-      AccumGDD > pest["gddRange"]["minGDD"] &&
-      AccumGDD < pest["gddRange"]["maxGDD"]
-    ) {
+    if (gddAccum > pest.gddRange.minGdd && gddAccum < pest.gddRange.maxGdd) {
       pestsPresent.push(pest["pest"]);
     }
   }
+
   return pestsPresent;
 }
 
-function updatePestsTextBox(AccumGDD, pestData) {
+function updatePestsTextBox(gddAccum, pestData) {
   // Get the pests present
-  const pestsPresent = getPestsPresent(AccumGDD, pestData);
+  const pestsPresent = getPestsPresent(gddAccum, pestData);
 
-  // Convert the array to a comma-separated string
-  const pestsList = pestsPresent.join(", ");
-
-  // Update the text box
-  pestsPresent.value = pestsList;
+  if (pestsPresent.length == 0) {
+    pestsPresentBox.value = "There are no pests present.";
+  } else {
+    // Convert the array to a comma-separated string
+    const pestsList = pestsPresent.join(", ");
+    pestsPresentBox.value = pestsList;
+    console.log(pestsList);
+  }
 }
