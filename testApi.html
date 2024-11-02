@@ -9,7 +9,7 @@
 <body>
     <input type="text" id="cityInput" placeholder="Enter city name" />
     <input type="text" id="stateInput" placeholder="Enter state name" />
-    <button id="getGeocode" onclick="generate()">Get Geocode</button>
+    <button id="getGeocode" onclick="getCoordinates(document.getElementById('cityInput').value, document.getElementById('stateInput').value)">Get Geocode</button>
     <div id="result"></div>
 
     <script src="latlong_converter.js"></script>
