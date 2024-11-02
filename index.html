@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>
-      <img src="./carrot.png" /> Plant Emergence Calculator
+      <img src="./carrot.png" /> <img src="./TitleText.png" class="title-text">
       <img src="./carrot.png" />
     </h1>
     <div class="app">
@@ -33,13 +33,13 @@
             placeholder="Enter city"
             value="Columbia"
           /> -->
-          <select type="text" id="city">
+          <select type="text" id="city" class="location-info">
             <option value="Columbia">Columbia</option>
             <option value="Manhattan">Manhattan</option>
             <option value="Wheat">Des Moines</option>
           </select>
-          <label for="plant" class="crop-info">Choose a plant:</label>
-          <select id="plant" class="crop-info">
+          <label for="plant" class="crop-info hidden">Choose a plant:</label>
+          <select id="plant" class="crop-info hidden">
             <option value="corn">Corn</option>
             <option value="soybean">Soybean</option>
             <option value="wheat">Wheat</option>
@@ -55,12 +55,12 @@
         </div>
         <div class="form-row">
           <!--Next button-->
-          <button id="next-button" class="button-row" type="button">
+          <button id="next-button" class="button-row next-button-class" type="button">
             Next
           </button>
         </div>
 
-        <div class="form-row crop-info">
+        <div class="form-row crop-info hidden">
           <!-- Planting Date -->
           <label for="plant-date">Planting Date:</label>
           <input type="date" id="plant-date" />
@@ -69,14 +69,14 @@
           <input type="date" id="current-date" />
         </div>
 
-        <div class="form-row crop-info">
+        <div class="form-row crop-info hidden">
           <!-- Calculate Button -->
           <button id="calculate-button" class="button-row" type="button">
             Calculate Days to Emergence
           </button>
         </div>
 
-        <div class="form-row results crop-info">
+        <div class="form-row results crop-info hidden">
           <div class="emergence-section">
             <label for="emergence-date">Emergence Date:</label>
             <p type="text" id="emergence"></p>

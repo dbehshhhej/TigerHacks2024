@@ -33,9 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
   stateSelect.addEventListener("change", updateCities);
 });
 
-document.getElementById("next-button").addEventListener("click", goNext());
+document.querySelector(".next-button-class").addEventListener("click", function(){
+    console.log("Got here!");
+    var elems = document.getElementsByClassName("crop-info");
+    for (var i=0;i<elems.length;i+=1){
+      elems[i].classList.remove("hidden");
+    }
+    document.querySelector("#next-button").style.display = "none";
+    document.getElementById("state").classList.add("disabled");
+    document.getElementById("city").classList.add("disabled");
 
-function goNext(){
-    document.querySelector(".crop-info").display = block;
-    document.querySelector("#next-button").display = none;
-}
+});

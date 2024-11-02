@@ -106,8 +106,18 @@ select:focus,
 }
 .crop-info
 {
-  display: none;
+  display: block;
 }
+
 .title-text{
   width: 750px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: .6;
+}
+
+.hidden{
+  display:none;
 }
