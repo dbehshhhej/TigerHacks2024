@@ -58,7 +58,7 @@ calculateButton.addEventListener("click", async function () {
     remainingGDD = emergenceGDD[plant] - currentAcumGDD;
     futureData = getFutureForecast(city, state);
     daysRemaining = projectDaysRemaining(futureData, remainingGDD);
-    updateEmergenceBox(`You have ${daysTillEmerge} days till emergence.`);
+    updateEmergenceBox(`You have ${daysTillEmerge} days until your crops emerge!`);
   } else {
     // Loops through FUTURE dates
     while (gddAccum < emergenceGDD[plant]) {
