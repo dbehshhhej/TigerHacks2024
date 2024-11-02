@@ -3,10 +3,11 @@ let plant = document.querySelector("#plant").value;
 let state = document.querySelector("#state").value;
 let city = document.querySelector("#city").value;
 let directPlantDate = document.querySelector("#plant-date"); // Ideally in ISO format
+let directCurrentDate = document.querySelector("#current-date");
 let emergence = document.querySelector("#emergence");
 let calculateButton = document.querySelector("#calculate-button");
 
-const daysSincePlanting = 8; // Number of days prior the present the crop was planted. Will be removed later, since the current date will be used (and days since planting is found between the planting date and the present).
+let demoMode = true; // Use to determine if function should be called!
 
 import { baseTemps, emergenceGDD } from "./constants.js";
 import { getCoordinates } from "./latlong_converter.js";
@@ -25,13 +26,12 @@ calculateButton.addEventListener("click", async function () {
   const centralOffset = plantDate.getTimezoneOffset() / 60; // Adjustment for time zone from default
   plantDate.setHours(plantDate.getHours() + centralOffset);
 
-  let endDate = new Date(plantDate); // New end date
-  endDate.setDate(plantDate.getDate() + daysSincePlanting);
+  let currentDate = new Date(directCurrentDate.value);
 
   let date = new Date(plantDate); // Placeholder date for calculation
 
   // Loops through PAST dates
-  while (date <= endDate) {
+  while (date <= currentDate) {
     let tempEntry = await getTempData(date); // Pulls array of temperatures from JSON
     let highTemp = tempEntry[0];
     let lowTemp = tempEntry[1];
