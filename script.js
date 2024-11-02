@@ -5,11 +5,12 @@ let city = document.querySelector("#city").value;
 let directPlantDate = document.querySelector("#plant-date"); // Ideally in ISO format
 let directCurrentDate = document.querySelector("#current-date");
 let emergence = document.querySelector("#emergence");
+let pestsPresent = document.querySelector("#pests-present");
 let calculateButton = document.querySelector("#calculate-button");
 
 let demoMode = true; // Use to determine if function should be called!
 
-import { baseTemps, emergenceGDD } from "./constants.js";
+import { baseTemps, emergenceGDD, pestData } from "./constants.js";
 // import { getCoordinates } from "./latlong_converter.js";
 // import { projectDaysRemaining } from "./linear_projection.js";
 // import { getFutureForecast } from "./future_forecast.js";
@@ -77,4 +78,28 @@ async function getTempData(date) {
   tempEntry[0] = tempData[formattedDate]?.["HighTemp"];
   tempEntry[1] = tempData[formattedDate]?.["LowTemp"];
   return tempEntry;
+}
+
+function getPestsPresent(AccumGDD, pestData) {
+  let pestsPresent = [];
+  for (const pest of pestData) {
+    if (
+      AccumGDD > pest["gddRange"]["minGDD"] &&
+      AccumGDD < pest["gddRange"]["maxGDD"]
+    ) {
+      pestsPresent.push(pest["pest"]);
+    }
+  }
+  return pestsPresent;
+}
+
+function updatePestsTextBox(AccumGDD, pestData) {
+  // Get the pests present
+  const pestsPresent = getPestsPresent(AccumGDD, pestData);
+
+  // Convert the array to a comma-separated string
+  const pestsList = pestsPresent.join(", ");
+
+  // Update the text box
+  pestsPresent.value = pestsList;
 }
