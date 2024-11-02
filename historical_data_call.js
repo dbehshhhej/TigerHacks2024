@@ -11,8 +11,8 @@ export async function getHistoricalData(lat, lon, unixTC)
         let afternoonCall = await makeCall(lat, lon, afternoonUnixTC);
 
         let dayData = {
-            'maxTemp': afternoonCall.data.temp,
-            'minTemp': morningCall.data.temp,
+            'maxTemp': afternoonCall,
+            'minTemp': morningCall,
         };
 
         return dayData;
@@ -27,10 +27,11 @@ function makeCall(lat, lon, TC) {
     return new Promise((resolve, reject) => {
         $.ajax({
             method: 'GET',
-            url: `https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=${lat}&lon=${lon}&dt=${TC}&units=imperial&appid=6785ce768440fe770c2b2f54dc298527`,
+            url: `https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=${lat}&lon=${lon}&dt=${TC}&units=imperial&appid=6785ce768440fe770c2b2f54dc298527`,
             contentType: 'application/json',
             success: function(result) {
-                resolve(result);
+                console.log('API Response:', result); 
+                resolve(result.data[0].temp);
             },
             error: function(jqXHR) {
                 console.error('Error: ', jqXHR.responseText);
