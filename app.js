@@ -1,62 +1,34 @@
-//function for dropdown button
-const mainDropdown = document.getElementById('mainDropdown');
-        const stateDropdown = document.getElementById('stateDropdown');
-        const cityDropdown = document.getElementById('cityDropdown');
-        
-        const cities = {
-            'MO': ['Columbia'],
-            'KS': ['Manhattan'],
-            'IA': ['Des Moines']
-        };
+document.addEventListener("DOMContentLoaded", function () {
+  const stateSelect = document.querySelector("#state");
+  const citySelect = document.querySelector("#city");
 
-        function handleMainDropdown() {
-            const selectedOption = mainDropdown.value;
-            
-            if (selectedOption === 'state') {
+  // Define cities for each state
+  const stateCities = {
+    KS: ["Manhattan"],
+    IA: ["Des Moines"],
+    MO: ["Columbia"],
+  };
 
-                stateDropdown.classList.remove('hidden');
+  // Function to update cities based on selected state
+  function updateCities() {
+    const selectedState = stateSelect.value;
+    const cities = stateCities[selectedState] || [];
 
-                cityDropdown.classList.add('hidden');
+    // Clear current city options
+    citySelect.innerHTML = "";
 
-            } else if (selectedOption === 'city') {
+    // Populate city dropdown with new options
+    cities.forEach((city) => {
+      const option = document.createElement("option");
+      option.value = city;
+      option.textContent = city;
+      citySelect.appendChild(option);
+    });
+  }
 
-                stateDropdown.classList.remove('hidden');
+  // Initial call to populate cities based on the default state
+  updateCities();
 
-                cityDropdown.classList.remove('hidden');
-
-            } else {
-
-                stateDropdown.classList.add('hidden');
-
-                cityDropdown.classList.add('hidden');
-            }
-        }
-
-        function handleStateChange() {
-
-            const selectedState = stateDropdown.value;
-
-            cityDropdown.innerHTML = '<option value="">Select a City</option>';
-
-            if (selectedState && cities[selectedState]) {
-                
-                cities[selectedState].forEach(city => {
-
-                    const option = document.createElement('option');
-
-                    option.value = city;
-
-                    option.textContent = city;
-
-                    cityDropdown.appendChild(option);
-
-                });
-
-                cityDropdown.classList.remove('hidden');
-
-            } else {
-                
-                cityDropdown.classList.add('hidden');
-            }
-        }
-    
+  // Event listener to update cities when state changes
+  stateSelect.addEventListener("change", updateCities);
+});
