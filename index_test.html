@@ -28,10 +28,24 @@
 
           <!-- State and City Selection -->
           <label for="state">State:</label>
-          <input type="text" id="state" placeholder="Enter state" />
+          <select type="text" id="state">
+            <option value="KS">KS</option>
+            <option value="IA">IA</option>
+            <option value="MO">MO</option>
+          </select>
 
           <label for="city">City:</label>
-          <input type="text" id="city" placeholder="Enter city" />
+          <!-- <input
+            type="text"
+            id="city"
+            placeholder="Enter city"
+            value="Columbia"
+          /> -->
+          <select type="text" id="city">
+            <option value="Columbia">Columbia</option>
+            <option value="Manhattan">Manhattan</option>
+            <option value="Wheat">Des Moines</option>
+          </select>
         </div>
 
         <div class="form-row">
@@ -44,11 +58,8 @@
             Calculate Days to Emergence
           </button>
 
-          <label for="emergence">Emergence Date:</label>
-          <input type="text" id="emergence" />
-
-          <!-- Emergence Result Display -->
-          <p id="emergence"></p>
+          <label for="emergence-date">Emergence Date:</label>
+          <p type="text" id="emergence"></p>
         </div>
 
         <div class="form-row"></div>
