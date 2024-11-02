@@ -108,6 +108,7 @@ select:focus,
 #emergence-date,
 #pests-present {
   display: block;
+  height: auto;
 }
 
 .results {
