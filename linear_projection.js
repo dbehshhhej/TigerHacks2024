@@ -1,4 +1,4 @@
-function project(forecastJSON, remainingDegrees, GDDBase)
+export function projectDaysRemaining(forecastJSON, remainingDegrees, GDDBase)
 {
 
     // Calculate GDD for each day, append it to an array
