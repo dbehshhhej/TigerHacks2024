@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./carrot.png">
+    <link rel="icon" href="./carrot.png" />
     <title>Plant Emergence Calculator</title>
   </head>
   <body>
-    <h1><img src="./carrot.png">  Plant Emergence Calculator  <img src="./carrot.png"></h1>
+    <h1>
+      <img src="./carrot.png" /> Plant Emergence Calculator
+      <img src="./carrot.png" />
+    </h1>
     <div class="app">
       <form method="POST">
         <!-- Plant Selection -->
@@ -58,20 +61,22 @@
           <input type="date" id="current-date" />
         </div>
 
-        <div class="form-row" >
+        <div class="form-row">
           <!-- Calculate Button -->
           <button id="calculate-button" class="button-row" type="button">
-            Calculate Days to Emergence 
+            Calculate Days to Emergence
           </button>
         </div>
 
-        <div class="form-row">
-          <label for="emergence-date">Emergence Date:</label>
-          <p type="text" id="emergence"></p>
-        </div>
-        <div class="form-row">
-          <label for="pests-present">Pests Present:</label>
-          <p type="text" id="pests-present"></p>
+        <div class="form-row results">
+          <div class="emergence-section">
+            <label for="emergence-date">Emergence Date:</label>
+            <p type="text" id="emergence"></p>
+          </div>
+          <div class="pests-present-section">
+            <label for="pests-present">Pests Present:</label>
+            <input type="text" id="pests-present" readonly />
+          </div>
         </div>
       </form>
     </div>

@@ -3,7 +3,9 @@ body {
   font-family: Helvetica, sans-serif, cursive;
   margin: 20px;
   background-image: url(./background.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgb(66, 180, 64);
   color: #333;
   line-height: 1.6;
 }
@@ -63,7 +65,7 @@ select,
   transition: border-color 0.3s;
 }
 
-#calculate-button{
+#calculate-button {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 15px;
@@ -85,7 +87,11 @@ select:focus,
 
 #emergence-date,
 #pests-present {
-  display: none;
+  display: block;
+}
+
+.results {
+  justify-content: space-between;
 }
 
 /* Form row styling */
