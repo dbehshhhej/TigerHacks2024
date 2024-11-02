@@ -32,3 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener to update cities when state changes
   stateSelect.addEventListener("change", updateCities);
 });
+
+document.getElementById("next-button").addEventListener("click", goNext());
+
+function goNext(){
+    document.querySelector(".crop-info").display = block;
+    document.querySelector("#next-button").display = none;
+}
