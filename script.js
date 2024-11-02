@@ -37,16 +37,13 @@ calculateButton.addEventListener("click", async function () {
   let placeholderDate = new Date(plantDate); // Placeholder date for calculation
   let currentAcumGDD;
 
+  let historicalData = "";
+
   if (!demoMode) {
     // Acual historical data calculation goes here
-
-
-
-
-
-
-
-
+    saveHistoricalData(city, state, directPlantDate, directCurrentDate);
+    historicalData = json.parse(localStorage.getItem("Historical_data_GDD"));
+    console.log(historicalData);
   } else {
     // Loops through PAST dates
     while (placeholderDate <= currentDate) {
@@ -67,7 +64,9 @@ calculateButton.addEventListener("click", async function () {
     remainingGDD = emergenceGDD[plant] - currentAcumGDD;
     futureData = getFutureForecast(city, state);
     daysRemaining = projectDaysRemaining(futureData, remainingGDD);
-    updateEmergenceBox(`You have ${daysTillEmerge} days until your crops emerge!`);
+    updateEmergenceBox(
+      `You have ${daysTillEmerge} days until your crops emerge!`
+    );
   } else {
     // Loops through FUTURE dates
     while (gddAccum < emergenceGDD[plant]) {
@@ -80,7 +79,9 @@ calculateButton.addEventListener("click", async function () {
       placeholderDate.setDate(placeholderDate.getDate() + 1); // Increments the date
     }
 
-    updateEmergenceBox(`You have ${daysTillEmerge} days till emergence.`); // Updates text box with emergence dates
+    updateEmergenceBox(
+      `You have ${daysTillEmerge} days until your crops emerge!`
+    ); // Updates text box with emergence dates
 
     updatePestsTextBox(gddAccum, pestData);
   }
