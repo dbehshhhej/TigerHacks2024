@@ -1,0 +1,1424 @@
+[
+    {
+        "pest": "American plum borer",
+        "life_stage": "adult flight and egg laying",
+        "gdd_range": {
+            "min_gdd": 245,
+            "max_gdd": 440
+        },
+        "degree_day_maps": [
+            250,
+            300,
+            450
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "American plum borer",
+        "life_stage": "2nd generation",
+        "gdd_range": {
+            "min_gdd": 1375,
+            "max_gdd": 1500
+        },
+        "degree_day_maps": [
+            1350,
+            1400,
+            1500
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Arborvitae leafminer",
+        "life_stage": "larvae in mines; 1st generation",
+        "gdd_range": {
+            "min_gdd": 245,
+            "max_gdd": 360
+        },
+        "degree_day_maps": [
+            250,
+            300,
+            350
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Arborvitae leafminer",
+        "life_stage": "2nd generation",
+        "gdd_range": {
+            "min_gdd": 533,
+            "max_gdd": 700
+        },
+        "degree_day_maps": [
+            500,
+            600,
+            700
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Arborvitae leafminer",
+        "life_stage": "3rd generation",
+        "gdd_range": {
+            "min_gdd": 1700,
+            "max_gdd": 2100
+        },
+        "degree_day_maps": [
+            1700,
+            1900,
+            2000
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Balsam gall midge",
+        "life_stage": "adults laying eggs",
+        "gdd_range": {
+            "min_gdd": 150,
+            "max_gdd": 300
+        },
+        "degree_day_maps": [
+            150,
+            200,
+            300
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Balsam gall midge",
+        "life_stage": "galls apparent",
+        "gdd_range": {
+            "min_gdd": 550,
+            "max_gdd": 700
+        },
+        "degree_day_maps": [
+            550,
+            650,
+            700
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Balsam twig aphid",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 60,
+            "max_gdd": 100
+        },
+        "degree_day_maps": [
+            50,
+            100
+        ],
+        "reference": "4"
+    },
+    {
+        "pest": "Balsam twig aphid",
+        "life_stage": "stem mothers present (control target)",
+        "gdd_range": {
+            "min_gdd": 100,
+            "max_gdd": 140
+        },
+        "degree_day_maps": [
+            100,
+            150
+        ],
+        "reference": "4"
+    },
+    {
+        "pest": "Banded ash clearwing borer",
+        "life_stage": "adult emergence",
+        "gdd_range": {
+            "min_gdd": 1800,
+            "max_gdd": 2200
+        },
+        "degree_day_maps": [
+            1800,
+            1900,
+            2000
+        ],
+        "reference": "1,2"
+    },
+    {
+        "pest": "Beech scale",
+        "life_stage": "eggs present",
+        "gdd_range": {
+            "min_gdd": 800,
+            "max_gdd": 800
+        },
+        "degree_day_maps": [
+            800
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Beech scale",
+        "life_stage": "egg hatch; 1st crawlers",
+        "gdd_range": {
+            "min_gdd": 1250,
+            "max_gdd": 1250
+        },
+        "degree_day_maps": [
+            1250
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Birch leafminer",
+        "life_stage": "1st adult emergence",
+        "gdd_range": {
+            "min_gdd": 175,
+            "max_gdd": 215
+        },
+        "degree_day_maps": [
+            150,
+            200
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Birch leafminer",
+        "life_stage": "Adults laying eggs",
+        "gdd_range": {
+            "min_gdd": 275,
+            "max_gdd": 375
+        },
+        "degree_day_maps": [
+            250,
+            300,
+            350
+        ],
+        "reference": "2"
+    },
+    {
+        "pest": "Birch leafminer",
+        "life_stage": "larvae and pupae",
+        "gdd_range": {
+            "min_gdd": 375,
+            "max_gdd": 500
+        },
+        "degree_day_maps": [
+            350,
+            400,
+            500
+        ],
+        "reference": "2"
+    },
+    {
+        "pest": "Birch leafminer",
+        "life_stage": "adults and egg laying; 2nd generation",
+        "gdd_range": {
+            "min_gdd": 600,
+            "max_gdd": 700
+        },
+        "degree_day_maps": [
+            600,
+            700
+        ],
+        "reference": "2"
+    },
+    {
+        "pest": "Black pineleaf scale",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 1068,
+            "max_gdd": 1068
+        },
+        "degree_day_maps": [
+            1050
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Bronze birch borer",
+        "life_stage": "adults; eggs; new grubs",
+        "gdd_range": {
+            "min_gdd": 400,
+            "max_gdd": 600
+        },
+        "degree_day_maps": [
+            400,
+            500,
+            600
+        ],
+        "reference": "1,2"
+    },
+    {
+        "pest": "Cankerworm",
+        "life_stage": "young caterpillars",
+        "gdd_range": {
+            "min_gdd": 100,
+            "max_gdd": 200
+        },
+        "degree_day_maps": [
+            100,
+            200
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Cooley spruce gall adelgid",
+        "life_stage": "1st adults active - Spruce (control target)",
+        "gdd_range": {
+            "min_gdd": 25,
+            "max_gdd": 120
+        },
+        "degree_day_maps": [
+            50,
+            100
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Cooley spruce gall adelgid",
+        "life_stage": "1st galls visible - Spruce",
+        "gdd_range": {
+            "min_gdd": 200,
+            "max_gdd": 310
+        },
+        "degree_day_maps": [
+            200,
+            250,
+            300
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Cooley spruce gall adelgid",
+        "life_stage": "1st adults active - Douglas fir",
+        "gdd_range": {
+            "min_gdd": 90,
+            "max_gdd": 180
+        },
+        "degree_day_maps": [
+            100,
+            150
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Cooley spruce gall adelgid",
+        "life_stage": "1st nymphs - Douglas fir (control target)",
+        "gdd_range": {
+            "min_gdd": 90,
+            "max_gdd": 150
+        },
+        "degree_day_maps": [
+            100,
+            150
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Cooley spruce gall adelgid",
+        "life_stage": "2nd nymphs - Douglas fir (control target)",
+        "gdd_range": {
+            "min_gdd": 600,
+            "max_gdd": 1000
+        },
+        "degree_day_maps": [
+            600,
+            800,
+            1000
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Cooley spruce gall adelgid",
+        "life_stage": "2nd adults active (control target)",
+        "gdd_range": {
+            "min_gdd": 1500,
+            "max_gdd": 1600
+        },
+        "degree_day_maps": [
+            1500,
+            1550,
+            1600
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Cottony maple scale",
+        "life_stage": "adults & yellow crawlers on leaf veins",
+        "gdd_range": {
+            "min_gdd": 802,
+            "max_gdd": 1200
+        },
+        "degree_day_maps": [
+            800,
+            950,
+            1200
+        ],
+        "reference": "1,2"
+    },
+    {
+        "pest": "Dogwood borer",
+        "life_stage": "adults, eggs, caterpillars",
+        "gdd_range": {
+            "min_gdd": 350,
+            "max_gdd": 850
+        },
+        "degree_day_maps": [
+            350,
+            550,
+            850
+        ],
+        "reference": "1,2"
+    },
+    {
+        "pest": "Eastern pine shoot borer",
+        "life_stage": "1st adults active",
+        "gdd_range": {
+            "min_gdd": 75,
+            "max_gdd": 200
+        },
+        "degree_day_maps": [
+            50,
+            100,
+            200
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Eastern spruce gall adelgid",
+        "life_stage": "1st adults active (control target)",
+        "gdd_range": {
+            "min_gdd": 25,
+            "max_gdd": 100
+        },
+        "degree_day_maps": [
+            50,
+            100
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Eastern spruce gall adelgid",
+        "life_stage": "egg hatch, galls begin forming",
+        "gdd_range": {
+            "min_gdd": 250,
+            "max_gdd": 310
+        },
+        "degree_day_maps": [
+            250,
+            300
+        ],
+        "reference": "1,3"
+    },
+    {
+        "pest": "Eastern spruce gall adelgid",
+        "life_stage": "2nd adults active (control target)",
+        "gdd_range": {
+            "min_gdd": 1500,
+            "max_gdd": 1600
+        },
+        "degree_day_maps": [
+            1500,
+            1550,
+            1600
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Eastern tent caterpillar",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 45,
+            "max_gdd": 100
+        },
+        "degree_day_maps": [
+            50,
+            100
+        ],
+        "reference": "1,2,3"
+    },
+    {
+        "pest": "Eastern tent caterpillar",
+        "life_stage": "tents apparent",
+        "gdd_range": {
+            "min_gdd": 150,
+            "max_gdd": 150
+        },
+        "degree_day_maps": [
+            150
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Eastern tent caterpillar",
+        "life_stage": "pupation",
+        "gdd_range": {
+            "min_gdd": 450,
+            "max_gdd": 450
+        },
+        "degree_day_maps": [
+            450
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Elm leaf beetle",
+        "life_stage": "1st generation",
+        "gdd_range": {
+            "min_gdd": 400,
+            "max_gdd": 600
+        },
+        "degree_day_maps": [
+            400,
+            500,
+            600
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Elm leaf beetle",
+        "life_stage": "2nd generation",
+        "gdd_range": {
+            "min_gdd": 1300,
+            "max_gdd": 1300
+        },
+        "degree_day_maps": [
+            1300
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Elm leafminer",
+        "life_stage": "adult emergence",
+        "gdd_range": {
+            "min_gdd": 215,
+            "max_gdd": 240
+        },
+        "degree_day_maps": [
+            200,
+            250
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Elm leafminer",
+        "life_stage": "1st generation larvae",
+        "gdd_range": {
+            "min_gdd": 365,
+            "max_gdd": 530
+        },
+        "degree_day_maps": [
+            350,
+            450,
+            550
+        ],
+        "reference": "2"
+    },
+    {
+        "pest": "Emerald ash borer",
+        "life_stage": "1st adult emergence",
+        "gdd_range": {
+            "min_gdd": 400,
+            "max_gdd": 500
+        },
+        "degree_day_maps": [
+            400,
+            500
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Emerald ash borer",
+        "life_stage": "peak adult activity",
+        "gdd_range": {
+            "min_gdd": 1000,
+            "max_gdd": 1200
+        },
+        "degree_day_maps": [
+            1000,
+            1100,
+            1200
+        ],
+        "reference": "*"
+    },
+    {
+        "pest": "Euonymus scale",
+        "life_stage": "egg hatch - 1st generation",
+        "gdd_range": {
+            "min_gdd": 400,
+            "max_gdd": 575
+        },
+        "degree_day_maps": [
+            400,
+            500,
+            550
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Euonymus scale",
+        "life_stage": "egg hatch - 2nd generation",
+        "gdd_range": {
+            "min_gdd": 1900,
+            "max_gdd": 1050
+        },
+        "degree_day_maps": [],
+        "reference": "1"
+    },
+    {
+        "pest": "European pine sawfly",
+        "life_stage": "1st larvae",
+        "gdd_range": {
+            "min_gdd": 100,
+            "max_gdd": 195
+        },
+        "degree_day_maps": [
+            100,
+            150,
+            200
+        ],
+        "reference": "1,3"
+    },
+    {
+        "pest": "European pine shoot moth",
+        "life_stage": "1st larvae",
+        "gdd_range": {
+            "min_gdd": 50,
+            "max_gdd": 220
+        },
+        "degree_day_maps": [
+            50,
+            100,
+            200
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "European pine shoot moth",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 900,
+            "max_gdd": 1000
+        },
+        "degree_day_maps": [
+            900,
+            950,
+            1000
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "European pine shoot moth",
+        "life_stage": "adults active",
+        "gdd_range": {
+            "min_gdd": 700,
+            "max_gdd": 800
+        },
+        "degree_day_maps": [
+            700,
+            750,
+            800
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Fall webworm",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 850,
+            "max_gdd": 900
+        },
+        "degree_day_maps": [
+            850,
+            900
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Fall webworm",
+        "life_stage": "caterpillars feeding",
+        "gdd_range": {
+            "min_gdd": 1200,
+            "max_gdd": 1800
+        },
+        "degree_day_maps": [
+            1200,
+            1500,
+            1800
+        ],
+        "reference": "2"
+    },
+    {
+        "pest": "Fall webworm",
+        "life_stage": "tents become apparent",
+        "gdd_range": {
+            "min_gdd": 1850,
+            "max_gdd": 2050
+        },
+        "degree_day_maps": [
+            1850,
+            1900,
+            2000
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Fletcher scale",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 850,
+            "max_gdd": 900
+        },
+        "degree_day_maps": [
+            850,
+            900
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Forest tent caterpillar",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 125,
+            "max_gdd": 250
+        },
+        "degree_day_maps": [
+            100,
+            150,
+            250
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Forest tent caterpillar",
+        "life_stage": "pupation",
+        "gdd_range": {
+            "min_gdd": 450,
+            "max_gdd": 450
+        },
+        "degree_day_maps": [
+            450
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Forest tent caterpillar",
+        "life_stage": "tachinid parasitic flies abundant",
+        "gdd_range": {
+            "min_gdd": 450,
+            "max_gdd": 550
+        },
+        "degree_day_maps": [
+            450,
+            500,
+            550
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Forest tent caterpillar",
+        "life_stage": "sarcophagid parasitic flies abundant (\"government fly\" or \"friendly fly\")",
+        "gdd_range": {
+            "min_gdd": 750,
+            "max_gdd": 850
+        },
+        "degree_day_maps": [
+            750,
+            800,
+            850
+        ],
+        "reference": "*"
+    },
+    {
+        "pest": "Golden oak scale",
+        "life_stage": "Egg hatch",
+        "gdd_range": {
+            "min_gdd": 680,
+            "max_gdd": 700
+        },
+        "degree_day_maps": [
+            650,
+            700
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Greater peach tree borer",
+        "life_stage": "adult emergence",
+        "gdd_range": {
+            "min_gdd": 575,
+            "max_gdd": 710
+        },
+        "degree_day_maps": [
+            550,
+            650,
+            700
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Gypsy moth",
+        "life_stage": "egg hatch, 1st larvae",
+        "gdd_range": {
+            "min_gdd": 145,
+            "max_gdd": 200
+        },
+        "degree_day_maps": [
+            150,
+            200
+        ],
+        "reference": "1, 3"
+    },
+    {
+        "pest": "Gypsy moth",
+        "life_stage": "young caterpillars",
+        "gdd_range": {
+            "min_gdd": 450,
+            "max_gdd": 450
+        },
+        "degree_day_maps": [
+            450
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Gypsy moth",
+        "life_stage": "pupation",
+        "gdd_range": {
+            "min_gdd": 900,
+            "max_gdd": 1200
+        },
+        "degree_day_maps": [
+            900,
+            1000,
+            1200
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Honeylocust spider mite",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 220,
+            "max_gdd": 250
+        },
+        "degree_day_maps": [
+            200,
+            250
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Honeylocust plant bug",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 220,
+            "max_gdd": 250
+        },
+        "degree_day_maps": [
+            200,
+            250
+        ],
+        "reference": "1,3"
+    },
+    {
+        "pest": "Introduced pine sawfly",
+        "life_stage": "1st larvae",
+        "gdd_range": {
+            "min_gdd": 400,
+            "max_gdd": 600
+        },
+        "degree_day_maps": [
+            400,
+            500,
+            600
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Imported willow leaf beetle",
+        "life_stage": "Adults active",
+        "gdd_range": {
+            "min_gdd": 120,
+            "max_gdd": 275
+        },
+        "degree_day_maps": [
+            150,
+            250,
+            300
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Jack pine budworm",
+        "life_stage": "young larvae feeding",
+        "gdd_range": {
+            "min_gdd": 300,
+            "max_gdd": 350
+        },
+        "degree_day_maps": [
+            300,
+            350
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Jack pine budworm",
+        "life_stage": "large larvae feeding - defoliation apparent",
+        "gdd_range": {
+            "min_gdd": 650,
+            "max_gdd": 700
+        },
+        "degree_day_maps": [
+            650,
+            700
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Jack pine sawfly",
+        "life_stage": "eggs; young larvae",
+        "gdd_range": {
+            "min_gdd": 100,
+            "max_gdd": 200
+        },
+        "degree_day_maps": [
+            100,
+            150,
+            200
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Jack pine sawfly",
+        "life_stage": "larger larvae consuming needles",
+        "gdd_range": {
+            "min_gdd": 275,
+            "max_gdd": 500
+        },
+        "degree_day_maps": [
+            250,
+            350,
+            500
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Japanese beetle",
+        "life_stage": "adults emerge and feed",
+        "gdd_range": {
+            "min_gdd": 950,
+            "max_gdd": 2150
+        },
+        "degree_day_maps": [
+            950,
+            1500,
+            2000
+        ],
+        "reference": "1,2"
+    },
+    {
+        "pest": "Juniper scale",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 550,
+            "max_gdd": 700
+        },
+        "degree_day_maps": [
+            550,
+            600,
+            700
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Larch casebearer",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 120,
+            "max_gdd": 150
+        },
+        "degree_day_maps": [
+            100,
+            150
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Large aspen tortrix",
+        "life_stage": "pupation",
+        "gdd_range": {
+            "min_gdd": 600,
+            "max_gdd": 700
+        },
+        "degree_day_maps": [
+            600,
+            700
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Lesser peach tree borer",
+        "life_stage": "adult flight",
+        "gdd_range": {
+            "min_gdd": 350,
+            "max_gdd": 375
+        },
+        "degree_day_maps": [
+            300,
+            350,
+            400
+        ],
+        "reference": "1,2"
+    },
+    {
+        "pest": "Lilac borer",
+        "life_stage": "adult flight",
+        "gdd_range": {
+            "min_gdd": 325,
+            "max_gdd": 350
+        },
+        "degree_day_maps": [
+            300,
+            350
+        ],
+        "reference": "1,2"
+    },
+    {
+        "pest": "Magnolia scale",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 1925,
+            "max_gdd": 1950
+        },
+        "degree_day_maps": [
+            1900,
+            2000
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Mimosa webworm",
+        "life_stage": "egg hatch - 1st generation",
+        "gdd_range": {
+            "min_gdd": 850,
+            "max_gdd": 900
+        },
+        "degree_day_maps": [
+            850,
+            900
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Northern pine weevil",
+        "life_stage": "1st adults active",
+        "gdd_range": {
+            "min_gdd": 25,
+            "max_gdd": 100
+        },
+        "degree_day_maps": [
+            50,
+            100
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Northern pine weevil",
+        "life_stage": "2nd adults active",
+        "gdd_range": {
+            "min_gdd": 1200,
+            "max_gdd": 1400
+        },
+        "degree_day_maps": [
+            1200,
+            1300,
+            1400
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Oystershell scale",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 350,
+            "max_gdd": 500
+        },
+        "degree_day_maps": [
+            350,
+            400,
+            500
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Pales weevil",
+        "life_stage": "1st adults active",
+        "gdd_range": {
+            "min_gdd": 25,
+            "max_gdd": 100
+        },
+        "degree_day_maps": [
+            50,
+            100
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Pales weevil",
+        "life_stage": "2nd adults active",
+        "gdd_range": {
+            "min_gdd": 1200,
+            "max_gdd": 1400
+        },
+        "degree_day_maps": [
+            1200,
+            1300,
+            1400
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Pine chafer (Anomela beetle)",
+        "life_stage": "1st adults active",
+        "gdd_range": {
+            "min_gdd": 450,
+            "max_gdd": 600
+        },
+        "degree_day_maps": [
+            450,
+            500,
+            600
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Pine engraver (Ips bark beetle)",
+        "life_stage": "1st adults active",
+        "gdd_range": {
+            "min_gdd": 100,
+            "max_gdd": 150
+        },
+        "degree_day_maps": [
+            100,
+            150
+        ],
+        "reference": "100, 150"
+    },
+    {
+        "pest": "Pine needle midge",
+        "life_stage": "1st adults active",
+        "gdd_range": {
+            "min_gdd": 400,
+            "max_gdd": 500
+        },
+        "degree_day_maps": [
+            400,
+            450,
+            500
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Pine needle scale",
+        "life_stage": "1st generation egg hatch",
+        "gdd_range": {
+            "min_gdd": 250,
+            "max_gdd": 400
+        },
+        "degree_day_maps": [
+            250,
+            300,
+            400
+        ],
+        "reference": "1,3,5,7"
+    },
+    {
+        "pest": "Pine needle scale",
+        "life_stage": "1st generation - hyaline stage (control target)",
+        "gdd_range": {
+            "min_gdd": 400,
+            "max_gdd": 500
+        },
+        "degree_day_maps": [
+            400,
+            500
+        ],
+        "reference": "5"
+    },
+    {
+        "pest": "Pine needle scale",
+        "life_stage": "2nd generation egg hatch",
+        "gdd_range": {
+            "min_gdd": 1250,
+            "max_gdd": 1350
+        },
+        "degree_day_maps": [
+            1250,
+            1300,
+            1350
+        ],
+        "reference": "1,3,5"
+    },
+    {
+        "pest": "Pine needle scale",
+        "life_stage": "2nd generation - hyaline stage (control target)",
+        "gdd_range": {
+            "min_gdd": 1500,
+            "max_gdd": 1500
+        },
+        "degree_day_maps": [
+            1500
+        ],
+        "reference": "5"
+    },
+    {
+        "pest": "Pine root collar weevil",
+        "life_stage": "1st adults active",
+        "gdd_range": {
+            "min_gdd": 300,
+            "max_gdd": 350
+        },
+        "degree_day_maps": [
+            300,
+            350
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Pine root collar weevil",
+        "life_stage": "2nd adults active",
+        "gdd_range": {
+            "min_gdd": 1200,
+            "max_gdd": 1400
+        },
+        "degree_day_maps": [
+            1200,
+            1300,
+            1400
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Pine shoot beetle",
+        "life_stage": "new adults emerge; begin shoot-feeding",
+        "gdd_range": {
+            "min_gdd": 500,
+            "max_gdd": 550
+        },
+        "degree_day_maps": [
+            500,
+            550
+        ],
+        "reference": "6"
+    },
+    {
+        "pest": "Pine shoot beetle",
+        "life_stage": "optimal control window",
+        "gdd_range": {
+            "min_gdd": 450,
+            "max_gdd": 500
+        },
+        "degree_day_maps": [
+            450,
+            500
+        ],
+        "reference": "6"
+    },
+    {
+        "pest": "Pine tortoise scale",
+        "life_stage": "egg hatch begins; 1st crawlers",
+        "gdd_range": {
+            "min_gdd": 400,
+            "max_gdd": 500
+        },
+        "degree_day_maps": [
+            400,
+            450,
+            500
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Pine tortoise scale",
+        "life_stage": "egg hatch ends; last of the crawlers",
+        "gdd_range": {
+            "min_gdd": 1000,
+            "max_gdd": 1200
+        },
+        "degree_day_maps": [
+            1000,
+            1100,
+            1200
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Pine tube moth",
+        "life_stage": "adults; egg laying; caterpillars",
+        "gdd_range": {
+            "min_gdd": 90,
+            "max_gdd": 250
+        },
+        "degree_day_maps": [
+            100,
+            200,
+            250
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Red-headed pine sawfly",
+        "life_stage": "1st larvae",
+        "gdd_range": {
+            "min_gdd": 400,
+            "max_gdd": 600
+        },
+        "degree_day_maps": [
+            400,
+            500,
+            600
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Spruce budscale",
+        "life_stage": "egg hatch, 1st crawlers",
+        "gdd_range": {
+            "min_gdd": 700,
+            "max_gdd": 1150
+        },
+        "degree_day_maps": [
+            700,
+            900,
+            1150
+        ],
+        "reference": "1,3"
+    },
+    {
+        "pest": "Spruce budworm",
+        "life_stage": "1st larvae",
+        "gdd_range": {
+            "min_gdd": 200,
+            "max_gdd": 300
+        },
+        "degree_day_maps": [
+            200,
+            250,
+            300
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Spruce needleminer",
+        "life_stage": "1st larvae",
+        "gdd_range": {
+            "min_gdd": 150,
+            "max_gdd": 200
+        },
+        "degree_day_maps": [
+            150,
+            200
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Spruce spider mite",
+        "life_stage": "1st egg hatch",
+        "gdd_range": {
+            "min_gdd": 150,
+            "max_gdd": 175
+        },
+        "degree_day_maps": [
+            150,
+            200
+        ],
+        "reference": "1,3"
+    },
+    {
+        "pest": "Striped pine scale",
+        "life_stage": "egg hatch",
+        "gdd_range": {
+            "min_gdd": 750,
+            "max_gdd": 800
+        },
+        "degree_day_maps": [
+            750,
+            800
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "Turpentine beetle",
+        "life_stage": "parent beetles colonizing brood material",
+        "gdd_range": {
+            "min_gdd": 300,
+            "max_gdd": 350
+        },
+        "degree_day_maps": [
+            300,
+            350
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Walnut caterpillar",
+        "life_stage": "egg hatch; caterpillars",
+        "gdd_range": {
+            "min_gdd": 1600,
+            "max_gdd": 1700
+        },
+        "degree_day_maps": [
+            1600,
+            1650,
+            1700
+        ],
+        "reference": "1"
+    },
+    {
+        "pest": "White pine weevil",
+        "life_stage": "1st adults active",
+        "gdd_range": {
+            "min_gdd": 25,
+            "max_gdd": 220
+        },
+        "degree_day_maps": [
+            50,
+            100,
+            200
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "White pine weevil",
+        "life_stage": "2nd adults active",
+        "gdd_range": {
+            "min_gdd": 1200,
+            "max_gdd": 1400
+        },
+        "degree_day_maps": [
+            1200,
+            1300,
+            1400
+        ],
+        "reference": "3"
+    },
+    {
+        "pest": "Zimmerman pine moth",
+        "life_stage": "1st larvae",
+        "gdd_range": {
+            "min_gdd": 25,
+            "max_gdd": 100
+        },
+        "degree_day_maps": [
+            50,
+            100
+        ],
+        "reference": "7"
+    },
+    {
+        "pest": "Zimmerman pine moth",
+        "life_stage": "adult flight",
+        "gdd_range": {
+            "min_gdd": 1700,
+            "max_gdd": 1700
+        },
+        "degree_day_maps": [
+            1700
+        ],
+        "reference": "1"
+    }
+]
