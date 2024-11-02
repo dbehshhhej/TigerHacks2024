@@ -8,6 +8,7 @@ import {
 // import { projectDaysRemaining } from "./linear_projection.js";
 import { getFutureForecast } from "./future_forecast_call.js";
 import { projectDaysRemaining } from "./linear_projection.js";
+import { saveHistoricalData } from "./historicCalls.js";
 
 // Retrieves values from HTML elements
 let plant = document.querySelector("#plant").value;
@@ -38,6 +39,14 @@ calculateButton.addEventListener("click", async function () {
 
   if (!demoMode) {
     // Acual historical data calculation goes here
+
+
+
+
+
+
+
+
   } else {
     // Loops through PAST dates
     while (placeholderDate <= currentDate) {

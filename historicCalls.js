@@ -1,7 +1,7 @@
 import { getCoordinates } from "./latlong_converter.js";
 import { getHistoricalData } from "./historical_data_call.js";
 
-async function saveHistoricalData(cityName, state, plantDateRaw) {
+export async function saveHistoricalData(cityName, state, plantDateRaw) {
   try {
     // Wait for coordinates to be fetched
     const data = await getCoordinates(cityName, state);
