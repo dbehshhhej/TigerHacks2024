@@ -10,18 +10,20 @@ let calculateButton = document.querySelector("#calculate-button");
 let demoMode = true; // Use to determine if function should be called!
 
 import { baseTemps, emergenceGDD } from "./constants.js";
-import { getCoordinates } from "./latlong_converter.js";
-import { projectDaysRemaining } from "./linear_projection.js";
-import { getFutureForecast } from "./future_forecast.js";
+// import { getCoordinates } from "./latlong_converter.js";
+// import { projectDaysRemaining } from "./linear_projection.js";
+// import { getFutureForecast } from "./future_forecast.js";
 
 // let lat = 2389752; // Temp vals, set from function calls
 // let long = 1492385702;
 
 // Event listener, activated on click
 calculateButton.addEventListener("click", async function () {
+  console.log(directPlantDate.value);
   let gddAccum = 0; // Accumulated GDD so far
 
   let plantDate = new Date(directPlantDate.value); // Reformatted planting date
+  console.log(plantDate);
 
   const centralOffset = plantDate.getTimezoneOffset() / 60; // Adjustment for time zone from default
   plantDate.setHours(plantDate.getHours() + centralOffset);

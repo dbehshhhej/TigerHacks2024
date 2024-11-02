@@ -4,61 +4,74 @@ body {
   margin: 20px;
   background-color: #f4f4f9;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Headings */
 h1 {
   color: #333;
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 h2,
 h3 {
   color: #555;
+  margin-bottom: 15px;
 }
 
+/* Form container */
 form {
   margin: 0 auto;
   max-width: 800px;
   background-color: #fff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
+/* Form labels */
 label {
   display: block;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 15px;
+  color: #444;
+  font-size: 1rem;
 }
 
+/* Input fields and button styling */
 input[type="text"],
 input[type="date"],
+select,
 #calculate-button {
-  padding: 8px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px;
   margin-top: 5px;
   margin-bottom: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border: 1px solid #ddd;
+  width: 100%; /* Adjust width to fit the form */
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  transition: border-color 0.3s;
 }
 
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+#calculate-button:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+#emergence-date,
+#pests-present {
+  display: none;
+}
+
+/* Form row styling */
 .form-row {
   display: flex;
-  justify-content: space-between;
-}
-
-/* Submit button styling */
-input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
 }
