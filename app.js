@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Define cities for each state
   const stateCities = {
-    KS: ["Manhattan"],
-    IA: ["Des Moines"],
-    MO: ["Columbia"],
+    KS: ["Manhattan", "Topeka", "Wichita"],
+    IA: ["Des Moines", "Cedar Rapids", "Iowa City"],
+    MO: ["Columbia", "Kansas City", "St. Louis"],
   };
 
   // Function to update cities based on selected state
