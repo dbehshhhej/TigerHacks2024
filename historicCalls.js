@@ -58,7 +58,7 @@ async function saveHistoricalData(cityName, state, plantDateRaw) {
     {
         console.log(error);
     }
-    var currentDateUnix = 1712206800;
+    var currentDateUnix = 1712206800 - 3*(86400);
     for(let day = plantDateUnix; day < currentDateUnix; day += 86400 )
     {
         
