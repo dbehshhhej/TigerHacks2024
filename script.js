@@ -1,4 +1,9 @@
-import { baseTemps, emergenceGDD, pestData } from "./constants.js";
+import {
+  baseTemps,
+  emergenceGDD,
+  pestData,
+  temperatureData,
+} from "./constants.js";
 // import { getCoordinates } from "./latlong_converter.js";
 // import { projectDaysRemaining } from "./linear_projection.js";
 import { getFutureForecast } from "./future_forecast_call.js";
@@ -38,7 +43,7 @@ calculateButton.addEventListener("click", async function () {
 
     // Loops through PAST dates
     while (placeholderDate <= currentDate) {
-      let tempEntry = await getTempData(placeholderDate); // Pulls array of temperatures from JSON
+      let tempEntry = await getTempData(placeholderDate, city); // Pulls array of temperatures from JSON
       let highTemp = tempEntry[0];
       let lowTemp = tempEntry[1];
 
@@ -82,15 +87,15 @@ function calcGDD(highTemp, lowTemp, plant) {
 
 function calcAccumGDD() {}
 
-/// Pulls the temperature data from the JSON, stores the high and low temps in an array, and returns the array
-async function getTempData(date) {
-  let response = await fetch("Columbia_Temp_Data.json");
-  let tempData = await response.json();
+/// Pulls the temperature data from the constants file, stores the high and low temps in an array, and returns the array
+async function getTempData(date, city) {
   let formattedDate = date.toISOString().split("T")[0];
 
+  let tempData = temperatureData[city][formattedDate];
+
   let tempEntry = [];
-  tempEntry[0] = tempData[formattedDate]?.["HighTemp"];
-  tempEntry[1] = tempData[formattedDate]?.["LowTemp"];
+  tempEntry[0] = tempData["HighTemp"];
+  tempEntry[1] = tempData["LowTemp"];
   return tempEntry;
 }
 

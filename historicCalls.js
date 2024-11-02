@@ -58,15 +58,15 @@ async function saveHistoricalData(cityName, state, plantDateRaw) {
     {
         console.log(error);
     }
-    var currentDateUnix = 1712206800 - 3*(86400);
+    var currentDateUnix = 1712206800 - 2*(86400);
     for(let day = plantDateUnix; day < currentDateUnix; day += 86400 )
     {
         
         // Make a call to get data, if needed
-        var temps = getHistoricalData(latitude, longitude, day);
+        var temps = await getHistoricalData(latitude, longitude, day);
         console.log(day);
         console.log(temps);
-        stored.cities[cityName].dates[plantDateUnix] = {
+        stored.cities[cityName].dates[day] = {
         maxTemp: temps.maxTemp,
         minTemp: temps.minTemp
         
