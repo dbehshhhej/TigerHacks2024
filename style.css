@@ -105,3 +105,6 @@ select:focus,
 {
   display: none;
 }
+.title-text{
+  width: 750px;
+}
