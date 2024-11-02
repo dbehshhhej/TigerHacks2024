@@ -8,7 +8,7 @@ export function getCoordinates(city, state)
         headers: { 'X-Api-Key': 'tzkrmsOunAxi2FQK9zHySg==tQrRLSukwCF5meZc'},
         contentType: 'application/json',
         success: function(result) {
-            console.log(result);
+            return result;
         },
         error: function ajaxError(jqXHR) {
             console.error('Error: ', jqXHR.responseText);
