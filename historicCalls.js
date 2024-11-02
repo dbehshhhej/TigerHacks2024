@@ -1,7 +1,7 @@
 import { getCoordinates } from "./latlong_converter.js";
 import { getHistoricalData } from "./historical_data_call.js";
 
-export async function saveHistoricalData(cityName, state, plantDateRaw) {
+export async function saveHistoricalData(cityName, state, plantDateRaw, currentDateRaw) {
   try {
     // Wait for coordinates to be fetched
     const data = await getCoordinates(cityName, state);
@@ -10,6 +10,8 @@ export async function saveHistoricalData(cityName, state, plantDateRaw) {
     var plantDate = new Date(plantDateRaw);
     var plantDateUnix = plantDate.getTime();
     plantDateUnix = toMidnightUnix(plantDateUnix);
+    var currentDate = new date(currentDateRaw);
+    var currentDateUnix = currentDate.getTime();
 
 
 
@@ -58,7 +60,6 @@ export async function saveHistoricalData(cityName, state, plantDateRaw) {
     {
         console.log(error);
     }
-    var currentDateUnix = 1712206800 - 2*(86400);
     for(let day = plantDateUnix; day < currentDateUnix; day += 86400 )
     {
         
