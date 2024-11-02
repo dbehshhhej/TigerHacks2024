@@ -1,11 +1,12 @@
 import { getCoordinates } from "./latlong_converter.js";
 
-async function saveHistoricalData(cityName, state, plantDate) {
+async function saveHistoricalData(cityName, state, plantDateRaw) {
   try {
     // Wait for coordinates to be fetched
     const data = await getCoordinates(cityName, state);
     const latitude = data.latitude;
     const longitude = data.longitude;
+    var plantDate = new Date(plantDateRaw);
     var plantDateUnix = plantDate.getTime();
 
     console.log(data);
@@ -18,12 +19,12 @@ async function saveHistoricalData(cityName, state, plantDate) {
           lat: latitude,
           lon: longitude,
           dates: {
-            plantDateUnix: {
+            [plantDateUnix]: {
               // Unix time for 2021-10-01
               maxTemp: 20,
               minTemp: 10,
             },
-            1633132800: {
+            [plantDateUnix + 86400000]: {
               // Unix time for 2021-10-02
               maxTemp: 22,
               minTemp: 12,
@@ -35,19 +36,18 @@ async function saveHistoricalData(cityName, state, plantDate) {
     console.log(data2);
 
     //loop below
-    localStorage.setItem("GDD_data", JSON.stringify(data2));
+    localStorage.setItem("Historical_data_GDD", JSON.stringify(data2));
 
-    var stored = JSON.parse(localStorage.getItem("GDD_data"));
+    var stored = JSON.parse(localStorage.getItem("Historical_data_GDD"));
 
-    if (!stored[cityName]?.dates[plantDate]) {
-      console.log("No data found for this date");
-      if (!stored[cityName]) {
-        console.log("No data found for this position");
-      }
-      // Make a call to get data, if needed
+    console.log("stored: ");
+    console.log(stored);
+    if (stored.cities[cityName].dates[plantDateUnix] == null) {
+        console.log("No Data found");
+        // Make a call to get data, if needed
     } else {
-      console.log("Data found");
-      console.log(stored);
+        console.log("Data found");
+        console.log(stored.cities[cityName].dates[plantDateUnix]);
     }
     //loop above
 
