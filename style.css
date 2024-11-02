@@ -52,7 +52,8 @@ label {
 input[type="text"],
 input[type="date"],
 select,
-#calculate-button {
+#calculate-button,
+#next-button {
   padding: 10px;
   font-size: 1rem;
   margin: 10px;
@@ -65,7 +66,8 @@ select,
   transition: border-color 0.3s;
 }
 
-#calculate-button {
+#calculate-button,
+#next-button {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 15px;
@@ -76,7 +78,8 @@ select,
 input[type="text"]:focus,
 input[type="date"]:focus,
 select:focus,
-#calculate-button:focus {
+#calculate-button:focus 
+#next-button{
   border-color: #4caf50;
   outline: none;
 }
@@ -97,4 +100,8 @@ select:focus,
 /* Form row styling */
 .form-row {
   display: flex;
+}
+.crop-info
+{
+  display: none;
 }
