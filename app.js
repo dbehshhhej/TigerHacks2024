@@ -1,4 +1,4 @@
-import { pestData } from "./constants.js";
+import { pestData, randBugFacts } from "./constants.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const stateSelect = document.querySelector("#state");
@@ -53,4 +53,12 @@ document
     let rand = Math.floor(Math.random() * pestData.length);
     document.getElementById("random-bug-name").textContent =
       pestData[rand].pest;
+
+
+    //randome bug fact
+    const randomIndex = Math.floor(Math.random() * randBugFacts.length);
+    let randBugFact =  randBugFacts[randomIndex];
+    document.getElementById("random-bug-fact").textContent =
+      randBugFact;
   });
+
