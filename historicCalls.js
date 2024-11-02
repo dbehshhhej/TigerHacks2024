@@ -1,4 +1,5 @@
 import { getCoordinates } from "./latlong_converter.js";
+import { getHistoricalData } from "./historical_data_call.js";
 
 async function saveHistoricalData(cityName, state, plantDateRaw) {
   try {
@@ -10,10 +11,7 @@ async function saveHistoricalData(cityName, state, plantDateRaw) {
     var plantDateUnix = plantDate.getTime();
     plantDateUnix = toMidnightUnix(plantDateUnix);
 
-    console.log(data);
-    console.log(plantDateUnix);
-    console.log(latitude);
-    console.log(longitude);
+
 
     let data2 = {
       cities: {
@@ -26,7 +24,7 @@ async function saveHistoricalData(cityName, state, plantDateRaw) {
               maxTemp: 20,
               minTemp: 10,
             },
-            [plantDateUnix + 86400000]: {
+            [plantDateUnix + 86400 ]: {
 
               maxTemp: 22,
               minTemp: 12,
@@ -35,7 +33,6 @@ async function saveHistoricalData(cityName, state, plantDateRaw) {
         },
       },
     };
-    console.log(data2);
 
      
     var dataStored = false;
@@ -61,17 +58,21 @@ async function saveHistoricalData(cityName, state, plantDateRaw) {
     {
         console.log(error);
     }
-    var currentDateUnix = 1712261520000;
-    /*for(let day = plantDateUnix; day < currentDateUnix; day += 86400000)
+    var currentDateUnix = 1712206800;
+    for(let day = plantDateUnix; day < currentDateUnix; day += 86400 )
     {
+        
         // Make a call to get data, if needed
-        //var temps = 
+        var temps = getHistoricalData(latitude, longitude, day);
+        console.log(day);
+        console.log(temps);
         stored.cities[cityName].dates[plantDateUnix] = {
-        maxTemp: 20,
-        minTemp: 10,
+        maxTemp: temps.maxTemp,
+        minTemp: temps.minTemp
+        
         };
     }
-        */
+        
 
         localStorage.setItem("Historical_data_GDD",JSON.stringify(stored));
         console.log(JSON.parse(localStorage.getItem("Historical_data_GDD")));
@@ -98,5 +99,5 @@ function toMidnightUnix(unixTimestamp) {//This was a function directly from chat
     date.setHours(0, 0, 0, 0);
 
     // Return the Unix timestamp for midnight
-    return Math.floor(date.getTime()); // Convert to seconds
+    return Math.floor(date.getTime()/1000); // Convert to seconds
 }

@@ -1,7 +1,6 @@
 export function getCoordinates(city, state) {
   return new Promise((resolve, reject) => {
-    console.log(city);
-    console.log(state);
+
     $.ajax({
       method: "GET",
       url: `https://api.api-ninjas.com/v1/geocoding?city=${city}&state=${state}&country=US`,
