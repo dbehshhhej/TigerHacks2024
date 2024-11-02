@@ -63,10 +63,10 @@ async function saveHistoricalData(cityName, state, plantDateRaw) {
     {
         
         // Make a call to get data, if needed
-        var temps = getHistoricalData(latitude, longitude, day);
+        var temps = await getHistoricalData(latitude, longitude, day);
         console.log(day);
         console.log(temps);
-        stored.cities[cityName].dates[plantDateUnix] = {
+        stored.cities[cityName].dates[day] = {
         maxTemp: temps.maxTemp,
         minTemp: temps.minTemp
         
