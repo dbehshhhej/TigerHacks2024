@@ -1,31 +1,20 @@
-.dropdown-button {
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color:white;
-    color:black;
-    border: none;
-    border-radius: 5px;
+.container {
+    margin: 20px
+}
+
+select {
+    padding: 8px;
+    margin: 5px;
+    min-width: 150px;
 
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:aliceblue;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin-top: 5px;
-    z-index: 1;
-
+#stateSelect {
+    display: block;
+    color: black;
 }
 
-.droptdown-content{
-    padding: 10px 20px;
-    cursor: pointer;
-
-}
-
-.dropdown-content div:hover{
-    background-color: #ddd;
+#citySelect {
+    display: block;
+    color: black;
 }
