@@ -9,15 +9,14 @@
   </head>
   <body>
     <h1>
-      <img src="./carrot.png" /> <img src="./TitleText.png" class="title-text">
+      <img src="./carrot.png" />
+      <img src="./TitleText.png" class="title-text" />
       <img src="./carrot.png" />
     </h1>
     <div class="app">
       <form method="POST">
         <!-- Plant Selection -->
         <div class="form-row">
-          
-
           <!-- State and City Selection -->
           <label for="state">State:</label>
           <select type="text" id="state">
@@ -38,6 +37,8 @@
             <option value="Manhattan">Manhattan</option>
             <option value="Wheat">Des Moines</option>
           </select>
+        </div>
+        <div class="form-row">
           <label for="plant" class="crop-info hidden">Choose a plant:</label>
           <select id="plant" class="crop-info hidden">
             <option value="corn">Corn</option>
@@ -51,11 +52,14 @@
             <option value="rice">Rice</option>
             <option value="potato">Potato</option>
           </select>
-
         </div>
         <div class="form-row">
           <!--Next button-->
-          <button id="next-button" class="button-row next-button-class" type="button">
+          <button
+            id="next-button"
+            class="button-row next-button-class"
+            type="button"
+          >
             Next
           </button>
         </div>
@@ -87,6 +91,15 @@
           </div>
         </div>
       </form>
+    </div>
+    <div class="random-bug-section">
+      <div class="form-row results crop-info hidden">
+        <div class="bug-names">
+          <label for="random-bug-name">Cool Random Bug Name:</label>
+          <p type="text" id="random-bug-name"></p>
+          <p type="text">Isn't this cool!</p>
+        </div>
+      </div>
     </div>
 
     <!-- JavaScript File -->

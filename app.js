@@ -1,3 +1,5 @@
+import { pestData } from "./constants.js";
+
 document.addEventListener("DOMContentLoaded", function () {
   const stateSelect = document.querySelector("#state");
   const citySelect = document.querySelector("#city");
@@ -33,14 +35,22 @@ document.addEventListener("DOMContentLoaded", function () {
   stateSelect.addEventListener("change", updateCities);
 });
 
-document.querySelector(".next-button-class").addEventListener("click", function(){
+document
+  .querySelector(".next-button-class")
+  .addEventListener("click", function () {
     console.log("Got here!");
     var elems = document.getElementsByClassName("crop-info");
-    for (var i=0;i<elems.length;i+=1){
+    for (var i = 0; i < elems.length; i += 1) {
       elems[i].classList.remove("hidden");
     }
     document.querySelector("#next-button").style.display = "none";
     document.getElementById("state").classList.add("disabled");
     document.getElementById("city").classList.add("disabled");
 
-});
+    // Random bug name stuff
+    document.getElementsByClassName("random-bug-section")[0].style.display =
+      "block";
+    let rand = Math.floor(Math.random() * pestData.length);
+    document.getElementById("random-bug-name").textContent =
+      pestData[rand].pest;
+  });
