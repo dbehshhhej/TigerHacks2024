@@ -33,14 +33,12 @@ calculateButton.addEventListener("click", async function () {
   plantDate.setHours(plantDate.getHours() + centralOffset);
 
   let currentDate = new Date(directCurrentDate.value);
-  let placeholderDate = new Date(plantDate);
+  let placeholderDate = new Date(plantDate); // Placeholder date for calculation
   let currentAcumGDD;
 
   if (!demoMode) {
     // Acual historical data calculation goes here
   } else {
-    // Placeholder date for calculation
-
     // Loops through PAST dates
     while (placeholderDate <= currentDate) {
       let tempEntry = await getTempData(placeholderDate, city); // Pulls array of temperatures from JSON
@@ -64,7 +62,7 @@ calculateButton.addEventListener("click", async function () {
   } else {
     // Loops through FUTURE dates
     while (gddAccum < emergenceGDD[plant]) {
-      let tempEntry = await getTempData(placeholderDate); // Pulls array of temperatures from JSON
+      let tempEntry = await getTempData(placeholderDate, city); // Pulls array of temperatures from JSON
       let highTemp = tempEntry[0];
       let lowTemp = tempEntry[1];
 
@@ -91,11 +89,18 @@ function calcAccumGDD() {}
 async function getTempData(date, city) {
   let formattedDate = date.toISOString().split("T")[0];
 
+  console.log(city, formattedDate);
   let tempData = temperatureData[city][formattedDate];
+
+  if (tempData == undefined) {
+    return [0, 0];
+  }
 
   let tempEntry = [];
   tempEntry[0] = tempData["HighTemp"];
   tempEntry[1] = tempData["LowTemp"];
+  console.log(tempEntry);
+
   return tempEntry;
 }
 

@@ -68,8 +68,15 @@ function calcGDD(highTemp, lowTemp, plant) {
 }
 
 /// Pulls the temperature data from the JSON, stores the high and low temps in an array, and returns the array
-async function getTempData(date) {
-  let response = await fetch("Columbia_Temp_Data.json");
+async function getTempData(date, city) {
+  let response;
+  switch (city) {
+    case "Columbia":
+      response = await fetch("Columbia_Temp_Data.json");
+      break;
+    default:
+      break;
+  }
   let tempData = await response.json();
   let formattedDate = date.toISOString().split("T")[0];
 
