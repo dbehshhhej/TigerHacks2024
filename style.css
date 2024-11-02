@@ -5,6 +5,7 @@ body {
   background-image: url(./background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgb(62, 183, 63);
   color: #333;
   line-height: 1.6;
 }

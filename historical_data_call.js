@@ -4,8 +4,6 @@ export function getHistoricalData(lat, lon, unixTC)
     console.log(lon);
 
     // Calculate the 5:30 am and 4:00 pm unix times
-    let morningUnixTC = unixTC + 19800000;
-    let afternoonUnixTC = unixTC + 57600000;
     let morningUnixTC = unixTC + 19800;
     let afternoonUnixTC = unixTC + 57600;
 
