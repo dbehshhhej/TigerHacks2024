@@ -1,11 +1,11 @@
-function getCoordinates(city, state)
+function getFutureForecast(lat, lon)
 {
-    console.log(city);
-    console.log(state);
+    console.log(lat);
+    console.log(lon);
     $.ajax({
         method: 'GET',
-        url: 'https://api.api-ninjas.com/v1/geocoding?city=' + city + '&state=' + state + '&country=US',
-        headers: { 'X-Api-Key': 'tzkrmsOunAxi2FQK9zHySg==tQrRLSukwCF5meZc'},
+        url: 'https://api.openweathermap.org/data/3.0/onecall?lat='+lat+'&lon='+long+'&exclude=current,minutely,hourly,alerts&units=metric',
+        headers: { 'appid': '6785ce768440fe770c2b2f54dc298527'},
         contentType: 'application/json',
         success: function(result) {
             console.log(result);
@@ -16,4 +16,3 @@ function getCoordinates(city, state)
         
     });
 }
-
