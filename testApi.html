@@ -11,7 +11,14 @@
     <input type="text" id="stateInput" placeholder="Enter state name" />
     <button id="getGeocode" onclick="getCoordinates(document.getElementById('cityInput').value, document.getElementById('stateInput').value)">Get Geocode</button>
     <div id="result"></div>
+    <div>
+        <input type="date" id="plantDate"/>
+        <button id="textCalls" onclick="saveHistoricalData(document.getElementById('cityInput').value, document.getElementById('stateInput').value,document.getElementById('plantDate'))">Get other stuff</button>
 
-    <script src="latlong_converter.js"></script>
+
+    </div>
+
+    <script src="historicCalls.js"></script>
+    
 </body>
 </html>
