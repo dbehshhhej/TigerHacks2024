@@ -9,29 +9,36 @@
 </head>
 <body>
 
-<form id="cityForm" action="/submit" method="POST">
+<div class="container">
+    <select id="locationSelect" onchange="showStateDropdown()">
 
-    <div class="dropdown">
+        <option value="Choose location"></option>
+        <option value="Select State"></option>
+        <option value="Select City"></option>
+        
+    </select>
 
-        <button onclick= "Myfunction()" class=""dropbtn">Dropdown</button>
+    <select id="showStateDropdown" class="hidden" onchange="handleStateChange()">
+        <option value="MO"></option>
+        <option value="KS"></option>
+        <option value="IA"></option>
+    </select>
 
-        <div id="Dropdown" class=""dropdown-content">
+    <select id="citySelect">
 
-            <div onclick="selectcity">Manhattan, KS</div>
+        <option value="Columbia"></option>
+        <option value="Manhattan"></option>
+        <option value="Des Moines"></option>
+    </select>
 
-            <div href="selectcity">Columbia, MO</div>
-
-            <div href="selectcity">Des Moines, IA</div>
-
-        </div>    
+</div>
     
-    </div>
+
 
     <input type="hidden" name="selectedCity" id="selectedCity">
 
     <button type="submit">Submit</button>
 
-</form>
 
 <script src="app.js"></script>
 </body>
