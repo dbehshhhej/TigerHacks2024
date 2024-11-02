@@ -1,7 +1,8 @@
 import { baseTemps, emergenceGDD, pestData } from "./constants.js";
 // import { getCoordinates } from "./latlong_converter.js";
 // import { projectDaysRemaining } from "./linear_projection.js";
-import { getFutureForecast } from "./future_forecast.js";
+import { getFutureForecast } from "./future_forecast_call.js";
+import { projectDaysRemaining } from "./linear_projection.js";
 
 // Retrieves values from HTML elements
 let plant = document.querySelector("#plant").value;
@@ -20,48 +21,57 @@ let demoMode = true; // Use to determine if function should be called!
 
 // Event listener, activated on click
 calculateButton.addEventListener("click", async function () {
-  console.log(directPlantDate.value);
   let gddAccum = 0; // Accumulated GDD so far
 
   let plantDate = new Date(directPlantDate.value); // Reformatted planting date
-  console.log(plantDate);
-
   const centralOffset = plantDate.getTimezoneOffset() / 60; // Adjustment for time zone from default
   plantDate.setHours(plantDate.getHours() + centralOffset);
 
   let currentDate = new Date(directCurrentDate.value);
+  let placeholderDate = new Date(plantDate);
+  let currentAcumGDD;
 
-  let date = new Date(plantDate); // Placeholder date for calculation
+  if (!demoMode) {
+    // Acual historical data calculation goes here
+  } else {
+    // Placeholder date for calculation
 
-  // Loops through PAST dates
-  while (date <= currentDate) {
-    let tempEntry = await getTempData(date); // Pulls array of temperatures from JSON
-    let highTemp = tempEntry[0];
-    let lowTemp = tempEntry[1];
-    console.log(tempEntry);
+    // Loops through PAST dates
+    while (placeholderDate <= currentDate) {
+      let tempEntry = await getTempData(placeholderDate); // Pulls array of temperatures from JSON
+      let highTemp = tempEntry[0];
+      let lowTemp = tempEntry[1];
 
-    gddAccum += calcGDD(highTemp, lowTemp, plant); // Calculates total accumulated GDD, up to the present
-    date.setDate(date.getDate() + 1); // Increments the date
+      gddAccum += calcGDD(highTemp, lowTemp, plant); // Calculates total accumulated GDD, up to the present
+      placeholderDate.setDate(placeholderDate.getDate() + 1); // Increments the date
+      currentAcumGDD = gddAccum; // Holds the accumulated GDD up to the present
+    }
   }
 
   let daysTillEmerge = 0;
-  let currentAcumGDD = gddAccum; // Holds the accumulated GDD up to the present
 
-  // Loops through FUTURE dates
-  while (gddAccum < emergenceGDD[plant]) {
-    let tempEntry = await getTempData(date); // Pulls array of temperatures from JSON
-    let highTemp = tempEntry[0];
-    let lowTemp = tempEntry[1];
+  if (!demoMode) {
+    // Calculates remaining days till emergence using forecast
+    remainingGDD = emergenceGDD[plant] - currentAcumGDD;
+    futureData = getFutureForecast(city, state);
+    daysRemaining = projectDaysRemaining(futureData, remainingGDD);
+    updateEmergenceBox(`You have ${daysTillEmerge} days till emergence.`);
+  } else {
+    // Loops through FUTURE dates
+    while (gddAccum < emergenceGDD[plant]) {
+      let tempEntry = await getTempData(placeholderDate); // Pulls array of temperatures from JSON
+      let highTemp = tempEntry[0];
+      let lowTemp = tempEntry[1];
 
-    gddAccum += calcGDD(highTemp, lowTemp, plant); // Calculates total accumulated GDD, up to the present
-    daysTillEmerge++; // Adds one to the days till emergence
-    date.setDate(date.getDate() + 1); // Increments the date
+      gddAccum += calcGDD(highTemp, lowTemp, plant); // Calculates total accumulated GDD, up to the present
+      daysTillEmerge++; // Adds one to the days till emergence
+      placeholderDate.setDate(placeholderDate.getDate() + 1); // Increments the date
+    }
+
+    updateEmergenceBox(`You have ${daysTillEmerge} days till emergence.`); // Updates text box with emergence dates
+
+    updatePestsTextBox(gddAccum, pestData);
   }
-
-  console.log(daysTillEmerge);
-  updateEmergenceBox(`You have ${daysTillEmerge} days till emergence.`); // Updates text box with emergence dates
-
-  updatePestsTextBox(gddAccum, pestData);
 });
 
 // Helper functions begin HERE
