@@ -1,4 +1,4 @@
-function getFutureForecast(lat, lon)
+export function getFutureForecast(lat, lon)
 {
     console.log(lat);
     console.log(lon);

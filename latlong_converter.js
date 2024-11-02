@@ -1,4 +1,4 @@
-function getCoordinates(city, state)
+export function getCoordinates(city, state)
 {
     console.log(city);
     console.log(state);
