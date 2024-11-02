@@ -1,50 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_test.css" />
+    <title>Plant Emergence Calculator</title>
+  </head>
+  <body>
+    <h1>Plant Emergence Calculator</h1>
+    <div class="app">
+      <form method="POST">
+        <!-- Plant Selection -->
+        <div class="form-row">
+          <label for="plant">Choose a plant:</label>
+          <select id="plant">
+            <option value="corn">Corn</option>
+            <option value="soybean">Soybean</option>
+            <option value="wheat">Wheat</option>
+            <option value="alfalfa">Alfalfa</option>
+            <option value="cotton">Cotton</option>
+            <option value="tomato">Tomato</option>
+            <option value="lettuce">Lettuce</option>
+            <option value="cucumber">Cucumber</option>
+            <option value="rice">Rice</option>
+            <option value="potato">Potato</option>
+          </select>
 
-</head>
-<header>
+          <!-- State and City Selection -->
+          <label for="state">State:</label>
+          <select type="text" id="state">
+            <option value="KS">KS</option>
+            <option value="IA">IA</option>
+            <option value="MO">MO</option>
+          </select>
 
-</header>
-<body>
+          <label for="city">City:</label>
+          <!-- <input
+            type="text"
+            id="city"
+            placeholder="Enter city"
+            value="Columbia"
+          /> -->
+          <select type="text" id="city">
+            <option value="Columbia">Columbia</option>
+            <option value="Manhattan">Manhattan</option>
+            <option value="Wheat">Des Moines</option>
+          </select>
+        </div>
 
-<div class="container">
-    <select id="locationSelect" onchange="showStateDropdown()">
+        <div class="form-row">
+          <!-- Planting Date -->
+          <label for="plant-date">Planting Date:</label>
+          <input type="date" id="plant-date" />
 
-        <option value="Choose location"></option>
-        <option value="Select State"></option>
-        <option value="Select City"></option>
-        
-    </select>
+          <label for="current-date">Current Date:</label>
+          <input type="date" id="current-date" />
+        </div>
 
-    <select id="showStateDropdown" class="hidden" onchange="handleStateChange()">
-        <option value="MO"></option>
-        <option value="KS"></option>
-        <option value="IA"></option>
-    </select>
+        <div class="form-row">
+          <!-- Calculate Button -->
+          <button id="calculate-button" type="button">
+            Calculate Days to Emergence
+          </button>
+        </div>
 
-    <select id="citySelect">
+        <div class="form-row">
+          <label for="emergence-date">Emergence Date:</label>
+          <p type="text" id="emergence"></p>
+        </div>
+        <div class="form-row">
+          <label for="pests-present">Pests Present:</label>
+          <p type="text" id="pests-present"></p>
+        </div>
+      </form>
+    </div>
 
-        <option value="Columbia"></option>
-        <option value="Manhattan"></option>
-        <option value="Des Moines"></option>
-    </select>
-
-</div>
-    
-
-
-    <input type="hidden" name="selectedCity" id="selectedCity">
-
-    <button type="submit">Submit</button>
-
-
-</body>
-<footer>
-    <script src="app.js"></script>
-</footer>
+    <!-- JavaScript File -->
+    <script src="script.js" type="module"></script>
+    <script src="constants.js" type="module"></script>
+  </body>
 </html>
