@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   stateSelect.addEventListener("change", updateCities);
 });
 
-document.addEventListener("next-button", goNext());
+document.getElementById("next-button").addEventListener("click", goNext());
 
 function goNext(){
     document.querySelector(".crop-info").display = block;
