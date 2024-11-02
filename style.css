@@ -1,93 +1,20 @@
-*{
-    padding: 0;
-    margin: 0;
+.container {
+    margin: 20px
 }
-.dropdown-button {
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color:white;
-    color:black;
-    border: none;
-    border-radius: 5px;
+
+select {
+    padding: 8px;
+    margin: 5px;
+    min-width: 150px;
 
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:aliceblue;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin-top: 5px;
-    z-index: 1;
-
+#stateSelect {
+    display: block;
+    color: black;
 }
 
-.droptdown-content{
-    padding: 10px 20px;
-    cursor: pointer;
-
+#citySelect {
+    display: block;
+    color: black;
 }
-
-.dropdown-content div:hover{
-    background-color: #ddd;
-}
-
-
-
-
-
-
-
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
-}
-
-#myInput {
-  box-sizing: border-box;
-  background-image: url('searchicon.png');
-  background-position: 14px 12px;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding: 14px 20px 12px 45px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-}
-
-#myInput:focus {outline: 3px solid #ddd;}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}

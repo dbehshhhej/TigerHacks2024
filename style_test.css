@@ -38,6 +38,8 @@ input[type="date"],
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
