@@ -98,3 +98,7 @@ select:focus,
 .form-row {
   display: flex;
 }
+
+.title-text{
+  width: 750px;
+}
