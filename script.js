@@ -20,7 +20,8 @@ let emergenceBox = document.querySelector("#emergence");
 let pestsPresentBox = document.querySelector("#pests-present");
 let calculateButton = document.querySelector("#calculate-button");
 
-let demoMode = true; // Use to determine if function should be called!
+let demoModePast = true; // Demo mode for calculating up to the present date
+let demoModeFuture = true; // Demo mode for calculating into the future
 
 // let lat = 2389752; // Temp vals, set from function calls
 // let long = 1492385702;
@@ -39,11 +40,19 @@ calculateButton.addEventListener("click", async function () {
 
   let historicalData = "";
 
-  if (!demoMode) {
+  // UP TO CURRENT DATE
+  if (!demoModePast) {
     // Acual historical data calculation goes here
-    saveHistoricalData(city, state, directPlantDate, directCurrentDate);
-    historicalData = json.parse(localStorage.getItem("Historical_data_GDD"));
-    console.log(historicalData);
+    console.log(city, state, directPlantDate.value, directCurrentDate.value);
+    await saveHistoricalData(
+      city.value,
+      state.value,
+      directPlantDate.value,
+      directCurrentDate.value
+    );
+    historicalData = JSON.parse(localStorage.getItem("Historical_data_GDD"));
+    let cityData = historicalData.cities[city];
+    console.log(cityData);
   } else {
     // Loops through PAST dates
     while (placeholderDate <= currentDate) {
@@ -58,17 +67,19 @@ calculateButton.addEventListener("click", async function () {
   }
 
   let daysTillEmerge = 0;
+  let remainingGDD = 0; // init
 
-  if (!demoMode) {
-    // Calculates remaining days till emergence using forecast
+  // CALCULATE DAYS REMAINING
+  if (!demoModeFuture) {
+    // Calculates remaining days using forecast
     remainingGDD = emergenceGDD[plant] - currentAcumGDD;
-    futureData = getFutureForecast(city, state);
+    futureData = await getFutureForecast(city, state);
     daysRemaining = projectDaysRemaining(futureData, remainingGDD);
     updateEmergenceBox(
       `You have ${daysTillEmerge} days until your crops emerge!`
     );
   } else {
-    // Loops through FUTURE dates
+    // Loops through FUTURE dates using dataset
     while (gddAccum < emergenceGDD[plant]) {
       let tempEntry = await getTempData(placeholderDate, city); // Pulls array of temperatures from JSON
       let highTemp = tempEntry[0];
