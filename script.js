@@ -22,7 +22,7 @@ let calculateButton = document.querySelector("#calculate-button");
 let accumGDDBox = document.querySelector("#gdd-accum");
 
 let demoModePast = true; // Demo mode for calculating up to the present date
-let demoModeFuture = true; // Demo mode for calculating into the future
+let demoModeFuture = false; // Demo mode for calculating into the future
 
 // Updates values on change
 document.querySelector("#plant").addEventListener("change", function () {
@@ -100,9 +100,23 @@ calculateButton.addEventListener("click", async function () {
   if (!demoModeFuture) {
     // Calculates remaining days using forecast
     remainingGDD = emergenceGDD[plant] - currentAcumGDD;
-    // futureData = await getFutureForecast(city, state);
-    let futureData = JSON.parse(localStorage.getItem("TempData.json"));
-    daysRemaining = projectDaysRemaining(futureData, remainingGDD);
+    // futureData = await getFutureForecast(city, state);'
+
+    let futureData;
+    try {
+      const response = await fetch("./Temp_Data.json");
+      futureData = await response.json(); // Parse and store JSON data
+      console.log(futureData); // Now `futureData` is defined
+    } catch (error) {
+      console.error("Error fetching JSON:", error);
+    }
+
+    console.log(futureData);
+    daysTillEmerge = projectDaysRemaining(
+      futureData,
+      remainingGDD,
+      baseTemps[plant]
+    );
 
     updateEmergenceBox(
       `You have ${daysTillEmerge} days until your crops emerge!!`
@@ -120,6 +134,7 @@ calculateButton.addEventListener("click", async function () {
         `You have ${daysTillEmerge} days until your crops emerge!`
       );
     }
+    console.log("got here!");
   } else {
     // Loops through FUTURE dates using dataset
 
@@ -158,7 +173,6 @@ calculateButton.addEventListener("click", async function () {
   }
   updateAccumGDDBox(gddAccum);
   updatePestsTextBox(gddAccum, pestData);
-  console.log(crop);
 });
 
 // Helper functions begin HERE
