@@ -9,7 +9,7 @@ let calculateButton = document.querySelector("#calculate-button");
 
 let demoMode = true; // Use to determine if function should be called!
 
-import { baseTemps, emergenceGDD } from "./constants.js";
+import { baseTemps, emergenceGDD } from "../constants.js";
 // import { getCoordinates } from "./latlong_converter.js";
 // import { projectDaysRemaining } from "./linear_projection.js";
 // import { getFutureForecast } from "./future_forecast.js";
