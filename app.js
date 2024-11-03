@@ -1,4 +1,5 @@
 import { pestData, randBugFacts } from "./constants.js";
+let calculateButton = document.querySelector("#calculate-button");
 
 document.addEventListener("DOMContentLoaded", function () {
   const stateSelect = document.querySelector("#state");
@@ -50,15 +51,21 @@ document
     // Random bug name stuff
     document.getElementsByClassName("random-bug-section")[0].style.display =
       "block";
+    document.getElementsByClassName("about-section")[0].style.display = "block";
     let rand = Math.floor(Math.random() * pestData.length);
     document.getElementById("random-bug-name").textContent =
       pestData[rand].pest;
 
-
     //randome bug fact
     const randomIndex = Math.floor(Math.random() * randBugFacts.length);
-    let randBugFact =  randBugFacts[randomIndex];
-    document.getElementById("random-bug-fact").textContent =
-      randBugFact;
+    let randBugFact = randBugFacts[randomIndex];
+    document.getElementById("random-bug-fact").textContent = randBugFact;
   });
 
+calculateButton.addEventListener("click", function () {
+  let hiddenLabel = document.getElementsByClassName("hidden-label");
+  for (var i = 0; i < hiddenLabel.length; i += 1) {
+    hiddenLabel[i].style.display = "block";
+  }
+  document.querySelector("#pests-present").style.display = "block";
+});

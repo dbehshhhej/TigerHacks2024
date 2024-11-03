@@ -9,9 +9,9 @@
   </head>
   <body>
     <h1>
-      <img src="./carrot.png" />
+      <img src="./carrot.png" class="carrot" />
       <img src="./TitleText.png" class="title-text" />
-      <img src="./carrot.png" />
+      <img src="./carrot.png" class="carrot" />
     </h1>
     <div class="app">
       <form method="POST">
@@ -82,16 +82,20 @@
 
         <div class="form-row results crop-info hidden">
           <div>
-            <label for="gdd-accum">Accumulated GDD:</label>
+            <label for="gdd-accum" class="hidden-label">Accumulated GDD:</label>
             <p type="text" id="gdd-accum" readonly></p>
           </div>
           <div class="emergence-section">
-            <label for="emergence-date">Emergence Date:</label>
+            <label for="emergence-date" class="hidden-label"
+              >Emergence Date:</label
+            >
             <p type="text" id="emergence"></p>
           </div>
           <div class="pests-present-section">
-            <label for="pests-present">Pests Present:</label>
-            <input type="text" id="pests-present" readonly />
+            <label for="pests-present" class="hidden-label"
+              >Pests Present:</label
+            >
+            <p type="text" id="pests-present" readonly></p>
           </div>
         </div>
       </form>
@@ -100,11 +104,37 @@
       <div class="form-row results crop-info hidden">
         <div class="bug-names">
           <label for="random-bug-name">Cool Random Bug Name:</label>
+          <img src="./ant.png" class="ant" />
           <p type="text" id="random-bug-name"></p>
           <label for="random-bug-fact">Cool Random Bug Fact:</label>
           <p type="text" id="random-bug-fact"></p>
           <p type="text">Isn't this cool?!</p>
         </div>
+      </div>
+    </div>
+    <div class="about-section">
+      <div class="form-row results">
+        <h4><strong>What is GDD?</strong></h4>
+      </div>
+      <div>
+        <p>
+          The Growth Degree Days (GDD) is a centuries old method of tracking and
+          predicting farm growth. Originally invented by Rene de Reamur in 1735,
+          GDD acknowledges this truth: Crops, among all other plants, begin
+          their growth after a certain temperature, usually in the early spring
+          as temperatures rise. As the temperature rises above that base
+          temperature, so too does the rate of growth of the crop rise.
+          According to GDD, it is the accumulation of degrees above that base
+          temperature that can predict different landmarks in a crops
+          development, wether that be a lot of degrees above in a few days or a
+          few degrees above over many days.
+        </p>
+        <p>
+          Additionally, GDD can also be used to predict when certain pests would
+          become problems during the season, allowing farmers to time
+          Pesticide/Insecticide applications, making their use more effective,
+          both in cost and pest resistance!
+        </p>
       </div>
     </div>
 

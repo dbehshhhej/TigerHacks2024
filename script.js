@@ -144,11 +144,11 @@ function updatePestsTextBox(gddAccum, pestData) {
   const pestsPresent = getPestsPresent(gddAccum, pestData);
 
   if (pestsPresent.length == 0) {
-    pestsPresentBox.value = "There are no pests present.";
+    pestsPresentBox.textContent = "There are no pests present.";
   } else {
     // Convert the array to a comma-separated string
     const pestsList = pestsPresent.join(", ");
-    pestsPresentBox.value = pestsList;
+    pestsPresentBox.textContent = pestsList;
     console.log(pestsList);
   }
 }
