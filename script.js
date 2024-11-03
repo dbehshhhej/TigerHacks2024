@@ -37,8 +37,13 @@ document.querySelector("#city").addEventListener("change", function () {
   city = document.querySelector("#city").value;
 });
 
-// let lat = 2389752; // Temp vals, set from function calls
-// let long = 1492385702;
+document
+  .querySelector(".next-button-class")
+  .addEventListener("click", function () {
+    plant = document.querySelector("#plant").value;
+    state = document.querySelector("#state").value;
+    city = document.querySelector("#city").value;
+  });
 
 // Event listener, activated on click
 calculateButton.addEventListener("click", async function () {
@@ -111,9 +116,10 @@ calculateButton.addEventListener("click", async function () {
       console.error("Error fetching JSON:", error);
     }
 
-    console.log(futureData);
+    console.log(city);
     daysTillEmerge = projectDaysRemaining(
       futureData,
+      city,
       remainingGDD,
       baseTemps[plant]
     );
