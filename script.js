@@ -23,6 +23,7 @@ let pestsPresentBox = document.querySelector("#pests-present");
 let calculateButton = document.querySelector("#calculate-button");
 let accumGDDBox = document.querySelector("#gdd-accum");
 
+
 let demoModePast = false; // Demo mode for calculating up to the present date
 let demoModeFuture = false; // Demo mode for calculating into the future
 
@@ -39,6 +40,10 @@ document.querySelector("#city").addEventListener("change", function () {
   city = document.querySelector("#city").value;
 });
 
+let demoModePast = true; // Demo mode for calculating up to the present date
+let demoModeFuture = true; // Demo mode for calculating into the future
+
+
 // let lat = 2389752; // Temp vals, set from function calls
 // let long = 1492385702;
 
@@ -52,7 +57,7 @@ calculateButton.addEventListener("click", async function () {
 
   let currentDate = new Date(directCurrentDate.value);
   let placeholderDate = new Date(plantDate); // Placeholder date for calculation
-  let currentAcumGDD;
+  let currentAcumGDD = 0;
 
   let historicalData;
 
@@ -103,9 +108,20 @@ calculateButton.addEventListener("click", async function () {
     remainingGDD = emergenceGDD[plant] - currentAcumGDD;
     futureData = await getFutureForecast(city, state);
     daysRemaining = projectDaysRemaining(futureData, remainingGDD);
+
     updateEmergenceBox(
       `You have ${daysTillEmerge} days until your crops emerge!!`
     );
+
+
+    // Updates emergence box based on conditions
+    if (daysTillEmerge == 0) {
+      updateEmergenceBox("Your crops have emerged!");
+    } else
+      updateEmergenceBox(
+        `You have ${daysTillEmerge} days until your crops emerge!`
+      );
+
   } else {
     // Loops through FUTURE dates using dataset
     console.log("Future calc starting here");
@@ -119,12 +135,17 @@ calculateButton.addEventListener("click", async function () {
       placeholderDate.setDate(placeholderDate.getDate() + 1); // Increments the date
     }
 
-    updateEmergenceBox(
-      `You have ${daysTillEmerge} days until your crops emerge!`
-    ); // Updates text box with emergence dates
+    // Updates emergence box based on conditions
+    if (daysTillEmerge == 0) {
+      updateEmergenceBox("Your crops have emerged!");
+    } else
+      updateEmergenceBox(
+        `You have ${daysTillEmerge} days until your crops emerge!`
+      );
 
     updateAccumGDDBox(gddAccum);
     updatePestsTextBox(gddAccum, pestData);
+    console.log(crop);
   }
 });
 
