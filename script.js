@@ -1,3 +1,5 @@
+//@ts-check
+
 import {
   baseTemps,
   emergenceGDD,
@@ -20,6 +22,9 @@ let emergenceBox = document.querySelector("#emergence");
 let pestsPresentBox = document.querySelector("#pests-present");
 let calculateButton = document.querySelector("#calculate-button");
 let accumGDDBox = document.querySelector("#gdd-accum");
+
+let demoModePast = false; // Demo mode for calculating up to the present date
+let demoModeFuture = false; // Demo mode for calculating into the future
 
 // Updates values on change
 document.querySelector("#plant").addEventListener("change", function () {
@@ -56,21 +61,30 @@ calculateButton.addEventListener("click", async function () {
   let placeholderDate = new Date(plantDate); // Placeholder date for calculation
   let currentAcumGDD = 0;
 
-  let historicalData = "";
+  let historicalData;
 
   // UP TO CURRENT DATE
   if (!demoModePast) {
     // Acual historical data calculation goes here
     console.log(city, state, directPlantDate.value, directCurrentDate.value);
-    await saveHistoricalData(
+    historicalData = await saveHistoricalData(
       city,
       state.value,
       directPlantDate.value,
       directCurrentDate.value
     );
-    historicalData = JSON.parse(localStorage.getItem("Historical_data_GDD"));
-    let cityData = historicalData.cities[city];
-    console.log(cityData);
+    console.log(historicalData);
+
+    let incrementDate = plantDate.getTime() / 1000;
+    while (incrementDate <= currentDate.getTime() / 1000) {
+      let tempEntry = historicalData[incrementDate];
+      let highTemp = tempEntry.maxTemp;
+      let lowTemp = tempEntry.minTemp;
+
+      gddAccum += calcGDD(highTemp, lowTemp, plant); // Calculates total accumulated GDD, up to the present
+      incrementDate += 86400; // Increments the date by one day, in seconds
+      currentAcumGDD = gddAccum; // Holds the accumulated GDD up to the present
+    }
   } else {
     // Loops through PAST dates
     while (placeholderDate <= currentDate) {
@@ -87,13 +101,17 @@ calculateButton.addEventListener("click", async function () {
   let daysTillEmerge = 0; // initialize variable
   let remainingGDD = 0; // initialize variable
 
-  // CALCULATE DAYS REMAINING
+  // DAYS REMAINING
   if (!demoModeFuture) {
     // Calculates remaining days using forecast
     remainingGDD = emergenceGDD[plant] - currentAcumGDD;
     // futureData = await getFutureForecast(city, state);
     let futureData = JSON.parse(localStorage.getItem("TempData.json"));
     daysRemaining = projectDaysRemaining(futureData, remainingGDD);
+
+    updateEmergenceBox(
+      `You have ${daysTillEmerge} days until your crops emerge!!`
+    );
 
     // Updates emergence box based on conditions
     if (daysTillEmerge == 0) {
@@ -153,8 +171,6 @@ calculateButton.addEventListener("click", async function () {
 function calcGDD(highTemp, lowTemp, plant) {
   return Math.max((highTemp + lowTemp) / 2 - baseTemps[plant], 0);
 }
-
-function calcAccumGDD() {}
 
 /// Pulls the temperature data from the constants file, stores the high and low temps in an array, and returns the array
 async function getTempData(date, city) {

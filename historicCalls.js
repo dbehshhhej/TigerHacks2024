@@ -14,10 +14,10 @@ export async function saveHistoricalData(
     const latitude = data.latitude;
     const longitude = data.longitude;
     var plantDate = new Date(plantDateRaw);
-    var plantDateUnix = plantDate.getTime();
+    var plantDateUnix = plantDate.getTime()/1000;
     plantDateUnix = toMidnightUnix(plantDateUnix);
     var currentDate = new Date(currentDateRaw);
-    var currentDateUnix = currentDate.getTime();
+    var currentDateUnix = currentDate.getTime()/1000;
 
     // let data2 = {
     //   cities: {
@@ -38,44 +38,17 @@ export async function saveHistoricalData(
     // },
     // };
 
-    var dataStored = false;
-    try {
-      var stored = JSON.parse(localStorage.getItem("Historical_data_GDD"));
-      if (stored == null) {
-        stored = { cities: {} };
-        localStorage.setItem("Historical_data_GDD", JSON.stringify(stored));
-      }
-      if (!stored.cities[cityName]) {
-        stored.cities[cityName] = {
-          lat: latitude,
-          lon: longitude,
-          dates: {},
-        };
-      }
-      localStorage.setItem("Historical_data_GDD", JSON.stringify(stored));
-    } catch (error) {
-      console.log(error);
-    }
+    // Define a new object dates that will have a lot of temperature data for each day appended to it.
+    let dates = {};
     for (let day = plantDateUnix; day < currentDateUnix; day += 86400) {
       console.log(day);
-      var storage = JSON.parse(localStorage.getItem("Historical_data_GDD"));
-      if (storage.cities[cityName].dates[day] != null) {
-        console.log("Data found in local, not pulling API!");
-        break;
-      }
       // Make a call to get data, if needed
-      console.log("Data not found in local, pulling API!");
       var temps = await getHistoricalData(latitude, longitude, day);
-      console.log(day);
+      dates[day] = temps;
       console.log(temps);
-      stored.cities[cityName].dates[day] = {
-        maxTemp: temps.maxTemp,
-        minTemp: temps.minTemp,
-      };
     }
 
-    localStorage.setItem("Historical_data_GDD", JSON.stringify(stored));
-    console.log(JSON.parse(localStorage.getItem("Historical_data_GDD")));
+    return dates;
   } catch (error) {
     console.error("Error fetching coordinates:", error);
   }

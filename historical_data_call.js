@@ -1,3 +1,5 @@
+//@ts-check
+
 export async function getHistoricalData(lat, lon, unixTC)
 {
     //console.log(lat);
@@ -10,12 +12,12 @@ export async function getHistoricalData(lat, lon, unixTC)
         let morningCall = await makeCall(lat, lon, morningUnixTC);
         let afternoonCall = await makeCall(lat, lon, afternoonUnixTC);
 
-        let dayData = {
+        let date = {
             'maxTemp': afternoonCall,
             'minTemp': morningCall,
         };
-
-        return dayData;
+        
+        return date;
     } catch (error) {
         console.error('Error fetching historical data:', error);
     console.error('Full error details:', error.responseText || error);
