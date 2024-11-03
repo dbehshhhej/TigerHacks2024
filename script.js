@@ -155,11 +155,10 @@ calculateButton.addEventListener("click", async function () {
         `You have ${daysTillEmerge} days until your crops emerge!`
       );
     }
-
-    updateAccumGDDBox(gddAccum);
-    updatePestsTextBox(gddAccum, pestData);
-    console.log(crop);
   }
+  updateAccumGDDBox(gddAccum);
+  updatePestsTextBox(gddAccum, pestData);
+  console.log(crop);
 });
 
 // Helper functions begin HERE
