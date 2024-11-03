@@ -57,10 +57,9 @@ export async function saveHistoricalData(
       console.log(error);
     }
     for (let day = plantDateUnix; day < currentDateUnix; day += 86400) {
+      console.log(day);
       var storage = JSON.parse(localStorage.getItem("Historical_data_GDD"));
-      console.log(storage);
-      if(storage.cities[cityName].dates[day] != null)
-      {
+      if (storage.cities[cityName].dates[day] != null) {
         console.log("Data found in local, not pulling API!");
         break;
       }
