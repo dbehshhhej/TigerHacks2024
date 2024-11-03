@@ -14,10 +14,10 @@ export async function saveHistoricalData(
     const latitude = data.latitude;
     const longitude = data.longitude;
     var plantDate = new Date(plantDateRaw);
-    var plantDateUnix = plantDate.getTime();
+    var plantDateUnix = plantDate.getTime()/1000;
     plantDateUnix = toMidnightUnix(plantDateUnix);
     var currentDate = new Date(currentDateRaw);
-    var currentDateUnix = currentDate.getTime();
+    var currentDateUnix = currentDate.getTime()/1000;
 
     // let data2 = {
     //   cities: {
