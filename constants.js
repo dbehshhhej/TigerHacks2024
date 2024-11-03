@@ -3311,52 +3311,896 @@ export const temperatureData = {
       LowTemp: 55.0,
     },
   },
+  Juneau: {
+    "2024-04-01": {
+      HighTemp: 45.0,
+      LowTemp: 33.0,
+    },
+    "2024-04-02": {
+      HighTemp: 39.0,
+      LowTemp: 32.0,
+    },
+    "2024-04-03": {
+      HighTemp: 47.0,
+      LowTemp: 27.0,
+    },
+    "2024-04-04": {
+      HighTemp: 50.0,
+      LowTemp: 27.0,
+    },
+    "2024-04-05": {
+      HighTemp: 46.0,
+      LowTemp: 32.0,
+    },
+    "2024-04-06": {
+      HighTemp: 35.0,
+      LowTemp: 32.0,
+    },
+    "2024-04-07": {
+      HighTemp: 43.0,
+      LowTemp: 32.0,
+    },
+    "2024-04-08": {
+      HighTemp: 38.0,
+      LowTemp: 33.0,
+    },
+    "2024-04-09": {
+      HighTemp: 39.0,
+      LowTemp: 32.0,
+    },
+    "2024-04-10": {
+      HighTemp: 43.0,
+      LowTemp: 33.0,
+    },
+    "2024-04-11": {
+      HighTemp: 44.0,
+      LowTemp: 32.0,
+    },
+    "2024-04-12": {
+      HighTemp: 51.0,
+      LowTemp: 33.0,
+    },
+    "2024-04-13": {
+      HighTemp: 38.0,
+      LowTemp: 33.0,
+    },
+    "2024-04-14": {
+      HighTemp: 38.0,
+      LowTemp: 32.0,
+    },
+    "2024-04-15": {
+      HighTemp: 44.0,
+      LowTemp: 28.0,
+    },
+    "2024-04-16": {
+      HighTemp: 51.0,
+      LowTemp: 29.0,
+    },
+    "2024-04-17": {
+      HighTemp: 54.0,
+      LowTemp: 29.0,
+    },
+    "2024-04-18": {
+      HighTemp: 55.0,
+      LowTemp: 30.0,
+    },
+    "2024-04-19": {
+      HighTemp: 58.0,
+      LowTemp: 31.0,
+    },
+    "2024-04-20": {
+      HighTemp: 61.0,
+      LowTemp: 32.0,
+    },
+    "2024-04-21": {
+      HighTemp: 62.0,
+      LowTemp: 32.0,
+    },
+    "2024-04-22": {
+      HighTemp: 60.0,
+      LowTemp: 33.0,
+    },
+    "2024-04-23": {
+      HighTemp: 51.0,
+      LowTemp: 36.0,
+    },
+    "2024-04-24": {
+      HighTemp: 56.0,
+      LowTemp: 37.0,
+    },
+    "2024-04-25": {
+      HighTemp: 48.0,
+      LowTemp: 33.0,
+    },
+    "2024-04-26": {
+      HighTemp: 59.0,
+      LowTemp: 33.0,
+    },
+    "2024-04-27": {
+      HighTemp: 63.0,
+      LowTemp: 34.0,
+    },
+    "2024-04-28": {
+      HighTemp: 69.0,
+      LowTemp: 39.0,
+    },
+    "2024-04-29": {
+      HighTemp: 53.0,
+      LowTemp: 37.0,
+    },
+    "2024-04-30": {
+      HighTemp: 57.0,
+      LowTemp: 38.0,
+    },
+    "2024-05-01": {
+      HighTemp: 56.0,
+      LowTemp: 33.0,
+    },
+    "2024-05-02": {
+      HighTemp: 61.0,
+      LowTemp: 35.0,
+    },
+    "2024-05-03": {
+      HighTemp: 63.0,
+      LowTemp: 36.0,
+    },
+    "2024-05-04": {
+      HighTemp: 67.0,
+      LowTemp: 36.0,
+    },
+    "2024-05-05": {
+      HighTemp: 66.0,
+      LowTemp: 41.0,
+    },
+    "2024-05-06": {
+      HighTemp: 48.0,
+      LowTemp: 39.0,
+    },
+    "2024-05-07": {
+      HighTemp: 52.0,
+      LowTemp: 39.0,
+    },
+    "2024-05-08": {
+      HighTemp: 44.0,
+      LowTemp: 38.0,
+    },
+    "2024-05-09": {
+      HighTemp: 48.0,
+      LowTemp: 37.0,
+    },
+    "2024-05-10": {
+      HighTemp: 51.0,
+      LowTemp: 38.0,
+    },
+    "2024-05-11": {
+      HighTemp: 54.0,
+      LowTemp: 35.0,
+    },
+    "2024-05-12": {
+      HighTemp: 59.0,
+      LowTemp: 38.0,
+    },
+    "2024-05-13": {
+      HighTemp: 48.0,
+      LowTemp: 38.0,
+    },
+    "2024-05-14": {
+      HighTemp: 42.0,
+      LowTemp: 37.0,
+    },
+    "2024-05-15": {
+      HighTemp: 46.0,
+      LowTemp: 38.0,
+    },
+    "2024-05-16": {
+      HighTemp: 49.0,
+      LowTemp: 36.0,
+    },
+    "2024-05-17": {
+      HighTemp: 60.0,
+      LowTemp: 39.0,
+    },
+    "2024-05-18": {
+      HighTemp: 53.0,
+      LowTemp: 41.0,
+    },
+    "2024-05-19": {
+      HighTemp: 52.0,
+      LowTemp: 41.0,
+    },
+    "2024-05-20": {
+      HighTemp: 53.0,
+      LowTemp: 40.0,
+    },
+    "2024-05-21": {
+      HighTemp: 44.0,
+      LowTemp: 36.0,
+    },
+    "2024-05-22": {
+      HighTemp: 59.0,
+      LowTemp: 38.0,
+    },
+    "2024-05-23": {
+      HighTemp: 58.0,
+      LowTemp: 42.0,
+    },
+    "2024-05-24": {
+      HighTemp: 51.0,
+      LowTemp: 41.0,
+    },
+    "2024-05-25": {
+      HighTemp: 53.0,
+      LowTemp: 42.0,
+    },
+    "2024-05-26": {
+      HighTemp: 49.0,
+      LowTemp: 39.0,
+    },
+    "2024-05-27": {
+      HighTemp: 58.0,
+      LowTemp: 42.0,
+    },
+    "2024-05-28": {
+      HighTemp: 53.0,
+      LowTemp: 41.0,
+    },
+    "2024-05-29": {
+      HighTemp: 57.0,
+      LowTemp: 42.0,
+    },
+    "2024-05-30": {
+      HighTemp: 54.0,
+      LowTemp: 42.0,
+    },
+    "2024-05-31": {
+      HighTemp: 53.0,
+      LowTemp: 42.0,
+    },
+    "2024-06-01": {
+      HighTemp: 60.0,
+      LowTemp: 44.0,
+    },
+    "2024-06-02": {
+      HighTemp: 54.0,
+      LowTemp: 42.0,
+    },
+    "2024-06-03": {
+      HighTemp: 57.0,
+      LowTemp: 43.0,
+    },
+    "2024-06-04": {
+      HighTemp: 65.0,
+      LowTemp: 46.0,
+    },
+    "2024-06-05": {
+      HighTemp: 65.0,
+      LowTemp: 46.0,
+    },
+    "2024-06-06": {
+      HighTemp: 51.0,
+      LowTemp: 43.0,
+    },
+    "2024-06-07": {
+      HighTemp: 56.0,
+      LowTemp: 43.0,
+    },
+    "2024-06-08": {
+      HighTemp: 69.0,
+      LowTemp: 45.0,
+    },
+    "2024-06-09": {
+      HighTemp: 79.0,
+      LowTemp: 50.0,
+    },
+    "2024-06-10": {
+      HighTemp: 68.0,
+      LowTemp: 49.0,
+    },
+    "2024-06-11": {
+      HighTemp: 54.0,
+      LowTemp: 46.0,
+    },
+    "2024-06-12": {
+      HighTemp: 67.0,
+      LowTemp: 47.0,
+    },
+    "2024-06-13": {
+      HighTemp: 61.0,
+      LowTemp: 45.0,
+    },
+    "2024-06-14": {
+      HighTemp: 60.0,
+      LowTemp: 44.0,
+    },
+    "2024-06-15": {
+      HighTemp: 60.0,
+      LowTemp: 42.0,
+    },
+    "2024-06-16": {
+      HighTemp: 75.0,
+      LowTemp: 47.0,
+    },
+    "2024-06-17": {
+      HighTemp: 69.0,
+      LowTemp: 49.0,
+    },
+    "2024-06-18": {
+      HighTemp: 69.0,
+      LowTemp: 48.0,
+    },
+    "2024-06-19": {
+      HighTemp: 71.0,
+      LowTemp: 52.0,
+    },
+    "2024-06-20": {
+      HighTemp: 72.0,
+      LowTemp: 49.0,
+    },
+    "2024-06-21": {
+      HighTemp: 70.0,
+      LowTemp: 53.0,
+    },
+    "2024-06-22": {
+      HighTemp: 72.0,
+      LowTemp: 52.0,
+    },
+    "2024-06-23": {
+      HighTemp: 68.0,
+      LowTemp: 49.0,
+    },
+    "2024-06-24": {
+      HighTemp: 62.0,
+      LowTemp: 51.0,
+    },
+    "2024-06-25": {
+      HighTemp: 56.0,
+      LowTemp: 50.0,
+    },
+    "2024-06-26": {
+      HighTemp: 67.0,
+      LowTemp: 50.0,
+    },
+    "2024-06-27": {
+      HighTemp: 75.0,
+      LowTemp: 53.0,
+    },
+    "2024-06-28": {
+      HighTemp: 74.0,
+      LowTemp: 52.0,
+    },
+    "2024-06-29": {
+      HighTemp: 71.0,
+      LowTemp: 55.0,
+    },
+    "2024-06-30": {
+      HighTemp: 64.0,
+      LowTemp: 53.0,
+    },
+    "2024-07-01": {
+      HighTemp: 65.0,
+      LowTemp: 52.0,
+    },
+    "2024-07-02": {
+      HighTemp: 62.0,
+      LowTemp: 51.0,
+    },
+    "2024-07-03": {
+      HighTemp: 56.0,
+      LowTemp: 50.0,
+    },
+    "2024-07-04": {
+      HighTemp: 56.0,
+      LowTemp: 49.0,
+    },
+    "2024-07-05": {
+      HighTemp: 60.0,
+      LowTemp: 51.0,
+    },
+    "2024-07-06": {
+      HighTemp: 58.0,
+      LowTemp: 51.0,
+    },
+    "2024-07-07": {
+      HighTemp: 62.0,
+      LowTemp: 51.0,
+    },
+    "2024-07-08": {
+      HighTemp: 70.0,
+      LowTemp: 47.0,
+    },
+    "2024-07-09": {
+      HighTemp: 74.0,
+      LowTemp: 50.0,
+    },
+    "2024-07-10": {
+      HighTemp: 63.0,
+      LowTemp: 52.0,
+    },
+    "2024-07-11": {
+      HighTemp: 58.0,
+      LowTemp: 50.0,
+    },
+    "2024-07-12": {
+      HighTemp: 61.0,
+      LowTemp: 50.0,
+    },
+    "2024-07-13": {
+      HighTemp: 55.0,
+      LowTemp: 51.0,
+    },
+    "2024-07-14": {
+      HighTemp: 54.0,
+      LowTemp: 52.0,
+    },
+    "2024-07-15": {
+      HighTemp: 56.0,
+      LowTemp: 53.0,
+    },
+    "2024-07-16": {
+      HighTemp: 58.0,
+      LowTemp: 53.0,
+    },
+    "2024-07-17": {
+      HighTemp: 60.0,
+      LowTemp: 52.0,
+    },
+    "2024-07-18": {
+      HighTemp: 58.0,
+      LowTemp: 53.0,
+    },
+    "2024-07-19": {
+      HighTemp: 63.0,
+      LowTemp: 53.0,
+    },
+    "2024-07-20": {
+      HighTemp: 68.0,
+      LowTemp: 55.0,
+    },
+    "2024-07-21": {
+      HighTemp: 72.0,
+      LowTemp: 53.0,
+    },
+    "2024-07-22": {
+      HighTemp: 69.0,
+      LowTemp: 55.0,
+    },
+    "2024-07-23": {
+      HighTemp: 61.0,
+      LowTemp: 52.0,
+    },
+    "2024-07-24": {
+      HighTemp: 54.0,
+      LowTemp: 49.0,
+    },
+    "2024-07-25": {
+      HighTemp: 53.0,
+      LowTemp: 46.0,
+    },
+    "2024-07-26": {
+      HighTemp: 55.0,
+      LowTemp: 50.0,
+    },
+    "2024-07-27": {
+      HighTemp: 61.0,
+      LowTemp: 50.0,
+    },
+    "2024-07-28": {
+      HighTemp: 55.0,
+      LowTemp: 51.0,
+    },
+    "2024-07-29": {
+      HighTemp: 59.0,
+      LowTemp: 51.0,
+    },
+    "2024-07-30": {
+      HighTemp: 62.0,
+      LowTemp: 52.0,
+    },
+    "2024-07-31": {
+      HighTemp: 61.0,
+      LowTemp: 51.0,
+    },
+    "2024-08-01": {
+      HighTemp: 56.0,
+      LowTemp: 48.0,
+    },
+    "2024-08-02": {
+      HighTemp: 58.0,
+      LowTemp: 46.0,
+    },
+    "2024-08-03": {
+      HighTemp: 67.0,
+      LowTemp: 46.0,
+    },
+    "2024-08-04": {
+      HighTemp: 68.0,
+      LowTemp: 49.0,
+    },
+    "2024-08-05": {
+      HighTemp: 83.0,
+      LowTemp: 52.0,
+    },
+    "2024-08-06": {
+      HighTemp: 85.0,
+      LowTemp: 52.0,
+    },
+    "2024-08-07": {
+      HighTemp: 74.0,
+      LowTemp: 52.0,
+    },
+    "2024-08-08": {
+      HighTemp: 72.0,
+      LowTemp: 51.0,
+    },
+    "2024-08-09": {
+      HighTemp: 73.0,
+      LowTemp: 51.0,
+    },
+    "2024-08-10": {
+      HighTemp: 73.0,
+      LowTemp: 51.0,
+    },
+    "2024-08-11": {
+      HighTemp: 71.0,
+      LowTemp: 52.0,
+    },
+    "2024-08-12": {
+      HighTemp: 70.0,
+      LowTemp: 55.0,
+    },
+    "2024-08-13": {
+      HighTemp: 64.0,
+      LowTemp: 52.0,
+    },
+    "2024-08-14": {
+      HighTemp: 66.0,
+      LowTemp: 49.0,
+    },
+    "2024-08-15": {
+      HighTemp: 60.0,
+      LowTemp: 45.0,
+    },
+    "2024-08-16": {
+      HighTemp: 68.0,
+      LowTemp: 46.0,
+    },
+    "2024-08-17": {
+      HighTemp: 72.0,
+      LowTemp: 48.0,
+    },
+    "2024-08-18": {
+      HighTemp: 70.0,
+      LowTemp: 51.0,
+    },
+    "2024-08-19": {
+      HighTemp: 75.0,
+      LowTemp: 51.0,
+    },
+    "2024-08-20": {
+      HighTemp: 65.0,
+      LowTemp: 51.0,
+    },
+    "2024-08-21": {
+      HighTemp: 58.0,
+      LowTemp: 46.0,
+    },
+    "2024-08-22": {
+      HighTemp: 75.0,
+      LowTemp: 47.0,
+    },
+    "2024-08-23": {
+      HighTemp: 75.0,
+      LowTemp: 47.0,
+    },
+    "2024-08-24": {
+      HighTemp: 63.0,
+      LowTemp: 47.0,
+    },
+    "2024-08-25": {
+      HighTemp: 57.0,
+      LowTemp: 49.0,
+    },
+    "2024-08-26": {
+      HighTemp: 56.0,
+      LowTemp: 48.0,
+    },
+    "2024-08-27": {
+      HighTemp: 60.0,
+      LowTemp: 47.0,
+    },
+    "2024-08-28": {
+      HighTemp: 55.0,
+      LowTemp: 48.0,
+    },
+    "2024-08-29": {
+      HighTemp: 57.0,
+      LowTemp: 51.0,
+    },
+    "2024-08-30": {
+      HighTemp: 53.0,
+      LowTemp: 49.0,
+    },
+    "2024-08-31": {
+      HighTemp: 55.0,
+      LowTemp: 50.0,
+    },
+    "2024-09-01": {
+      HighTemp: 57.0,
+      LowTemp: 50.0,
+    },
+    "2024-09-02": {
+      HighTemp: 58.0,
+      LowTemp: 50.0,
+    },
+    "2024-09-03": {
+      HighTemp: 59.0,
+      LowTemp: 49.0,
+    },
+    "2024-09-04": {
+      HighTemp: 56.0,
+      LowTemp: 48.0,
+    },
+    "2024-09-05": {
+      HighTemp: 57.0,
+      LowTemp: 48.0,
+    },
+    "2024-09-06": {
+      HighTemp: 56.0,
+      LowTemp: 51.0,
+    },
+    "2024-09-07": {
+      HighTemp: 55.0,
+      LowTemp: 51.0,
+    },
+    "2024-09-08": {
+      HighTemp: 56.0,
+      LowTemp: 47.0,
+    },
+    "2024-09-09": {
+      HighTemp: 57.0,
+      LowTemp: 44.0,
+    },
+    "2024-09-10": {
+      HighTemp: 51.0,
+      LowTemp: 45.0,
+    },
+    "2024-09-11": {
+      HighTemp: 62.0,
+      LowTemp: 40.0,
+    },
+    "2024-09-12": {
+      HighTemp: 63.0,
+      LowTemp: 40.0,
+    },
+    "2024-09-13": {
+      HighTemp: 52.0,
+      LowTemp: 47.0,
+    },
+    "2024-09-14": {
+      HighTemp: 53.0,
+      LowTemp: 47.0,
+    },
+    "2024-09-15": {
+      HighTemp: 57.0,
+      LowTemp: 47.0,
+    },
+    "2024-09-16": {
+      HighTemp: 54.0,
+      LowTemp: 49.0,
+    },
+    "2024-09-17": {
+      HighTemp: 56.0,
+      LowTemp: 47.0,
+    },
+    "2024-09-18": {
+      HighTemp: 59.0,
+      LowTemp: 46.0,
+    },
+    "2024-09-19": {
+      HighTemp: 52.0,
+      LowTemp: 48.0,
+    },
+    "2024-09-20": {
+      HighTemp: 51.0,
+      LowTemp: 46.0,
+    },
+    "2024-09-21": {
+      HighTemp: 50.0,
+      LowTemp: 45.0,
+    },
+    "2024-09-22": {
+      HighTemp: 53.0,
+      LowTemp: 45.0,
+    },
+    "2024-09-23": {
+      HighTemp: 52.0,
+      LowTemp: 48.0,
+    },
+    "2024-09-24": {
+      HighTemp: 58.0,
+      LowTemp: 48.0,
+    },
+    "2024-09-25": {
+      HighTemp: 52.0,
+      LowTemp: 46.0,
+    },
+    "2024-09-26": {
+      HighTemp: 51.0,
+      LowTemp: 43.0,
+    },
+    "2024-09-27": {
+      HighTemp: 58.0,
+      LowTemp: 40.0,
+    },
+    "2024-09-28": {
+      HighTemp: 53.0,
+      LowTemp: 40.0,
+    },
+    "2024-09-29": {
+      HighTemp: 48.0,
+      LowTemp: 43.0,
+    },
+    "2024-09-30": {
+      HighTemp: 51.0,
+      LowTemp: 42.0,
+    },
+    "2024-10-01": {
+      HighTemp: 49.0,
+      LowTemp: 41.0,
+    },
+    "2024-10-02": {
+      HighTemp: 54.0,
+      LowTemp: 37.0,
+    },
+    "2024-10-03": {
+      HighTemp: 44.0,
+      LowTemp: 37.0,
+    },
+    "2024-10-04": {
+      HighTemp: 48.0,
+      LowTemp: 37.0,
+    },
+    "2024-10-05": {
+      HighTemp: 50.0,
+      LowTemp: 37.0,
+    },
+    "2024-10-06": {
+      HighTemp: 48.0,
+      LowTemp: 42.0,
+    },
+    "2024-10-07": {
+      HighTemp: 46.0,
+      LowTemp: 42.0,
+    },
+    "2024-10-08": {
+      HighTemp: 45.0,
+      LowTemp: 40.0,
+    },
+    "2024-10-09": {
+      HighTemp: 45.0,
+      LowTemp: 40.0,
+    },
+    "2024-10-10": {
+      HighTemp: 44.0,
+      LowTemp: 41.0,
+    },
+    "2024-10-11": {
+      HighTemp: 43.0,
+      LowTemp: 38.0,
+    },
+    "2024-10-12": {
+      HighTemp: 50.0,
+      LowTemp: 39.0,
+    },
+    "2024-10-13": {
+      HighTemp: 53.0,
+      LowTemp: 42.0,
+    },
+    "2024-10-14": {
+      HighTemp: 44.0,
+      LowTemp: 42.0,
+    },
+    "2024-10-15": {
+      HighTemp: 45.0,
+      LowTemp: 41.0,
+    },
+    "2024-10-16": {
+      HighTemp: 47.0,
+      LowTemp: 38.0,
+    },
+    "2024-10-17": {
+      HighTemp: 46.0,
+      LowTemp: 40.0,
+    },
+    "2024-10-18": {
+      HighTemp: 43.0,
+      LowTemp: 35.0,
+    },
+    "2024-10-19": {
+      HighTemp: 40.0,
+      LowTemp: 33.0,
+    },
+    "2024-10-20": {
+      HighTemp: 42.0,
+      LowTemp: 29.0,
+    },
+    "2024-10-21": {
+      HighTemp: 42.0,
+      LowTemp: 28.0,
+    },
+    "2024-10-22": {
+      HighTemp: 41.0,
+      LowTemp: 28.0,
+    },
+    "2024-10-23": {
+      HighTemp: 40.0,
+      LowTemp: 29.0,
+    },
+    "2024-10-24": {
+      HighTemp: 39.0,
+      LowTemp: 35.0,
+    },
+    "2024-10-25": {
+      HighTemp: 38.0,
+      LowTemp: 32.0,
+    },
+    "2024-10-26": {
+      HighTemp: 43.0,
+      LowTemp: 32.0,
+    },
+    "2024-10-27": {
+      HighTemp: 43.0,
+      LowTemp: 35.0,
+    },
+    "2024-10-28": {
+      HighTemp: 46.0,
+      LowTemp: 31.0,
+    },
+  },
 };
 
+export const randBugFacts = [
+  "Houseflies find sugar with their feet, which are 10 million times more sensitive than human tongues.",
 
-export const randBugFacts = 
-[
-    "Houseflies find sugar with their feet, which are 10 million times more sensitive than human tongues.",
+  "Ticks can grow from the size of a grain of rice to the size of a marble.",
 
-    "Ticks can grow from the size of a grain of rice to the size of a marble.",
+  "Approximately 2,000 silkworm cocoons are needed to produce one pound of silk.",
 
-    "Approximately 2,000 silkworm cocoons are needed to produce one pound of silk.",
+  "While gathering food, a bee may fly up to 60 miles in one day.",
 
-    "While gathering food, a bee may fly up to 60 miles in one day.",
+  "Ants can lift and carry more than fifty times their own weight.",
 
-    "Ants can lift and carry more than fifty times their own weight.",
+  "Mexican Jumping Beans, sometimes sold commercially, actually have a caterpillar of a bean moth inside.",
 
-    "Mexican Jumping Beans, sometimes sold commercially, actually have a caterpillar of a bean moth inside.",
+  "It takes about one hundred Monarch Butterflies to weigh an ounce.",
 
-    "It takes about one hundred Monarch Butterflies to weigh an ounce.",
+  "When the droppings of millions of cattle started ruining the land in Australia, dung beetles were imported to reduce the problem.",
 
-    "When the droppings of millions of cattle started ruining the land in Australia, dung beetles were imported to reduce the problem.",
+  "Wasps feeding on fermenting juice have been known to get 'drunk' and pass out.",
 
-    "Wasps feeding on fermenting juice have been known to get 'drunk' and pass out.",
+  "The queen of a certain termite species can lay 40,000 eggs per day.",
 
-    "The queen of a certain termite species can lay 40,000 eggs per day.",
+  "Honeybees have to make about ten million trips to collect enough nectar for production of one pound of honey.",
 
-    "Honeybees have to make about ten million trips to collect enough nectar for production of one pound of honey.",
+  "Insects have been present for about 350 million years, and humans for only 300,000 years.",
 
-    "Insects have been present for about 350 million years, and humans for only 300,000 years.",
+  "Blow flies are the first kind of insect attracted to an animal carcass following death.",
 
-    "Blow flies are the first kind of insect attracted to an animal carcass following death.",
+  "The term 'honeymoon' comes from the Middle Ages, when a newly married couple was provided with enough honey wine to last for the first month of their married life.",
 
-    "The term 'honeymoon' comes from the Middle Ages, when a newly married couple was provided with enough honey wine to last for the first month of their married life.",
+  "To survive the cold of winter months, many insects replace their body water with a chemical called glycerol, which acts as an 'antifreez' against the temperatures.",
 
-    "To survive the cold of winter months, many insects replace their body water with a chemical called glycerol, which acts as an 'antifreez' against the temperatures.",
+  "There are nearly as many species of ants (8,800) as there are species of birds (9,000) in the world.",
 
-    "There are nearly as many species of ants (8,800) as there are species of birds (9,000) in the world.",
+  "The male silk moth is estimated to 'smell' chemicals of female silk moths in the air at the ratio of a few hundred molecules among 25 quintillion (25,000,000,000,000,000,000) molecules in a cubic centimeter of air.",
 
-    "The male silk moth is estimated to 'smell' chemicals of female silk moths in the air at the ratio of a few hundred molecules among 25 quintillion (25,000,000,000,000,000,000) molecules in a cubic centimeter of air.",
+  "True flies have only one pair of wings, and sometimes, none at all. A hind pair of 'wings' is reduced to balancing organs called halteres.",
 
-    "True flies have only one pair of wings, and sometimes, none at all. A hind pair of 'wings' is reduced to balancing organs called halteres.",
+  "There are about 91,000 different kinds (species) of insects in the United States. In the world, some 1.5 million different kinds (species) have been named.",
 
-    "There are about 91,000 different kinds (species) of insects in the United States. In the world, some 1.5 million different kinds (species) have been named.",
+  "Vladimir Nabokov, a famous Russian author, collected butterflies and actually named as a new subspecies the Kamer Blue Butterfly from the pine barrens of the Northeast United States.",
 
-    "Vladimir Nabokov, a famous Russian author, collected butterflies and actually named as a new subspecies the Kamer Blue Butterfly from the pine barrens of the Northeast United States.",
+  "A particular Hawk Moth caterpillar from Brazil, when alarmed, raises its head and inflates its thorax, causing it to look like the head of a snake.",
 
-    "A particular Hawk Moth caterpillar from Brazil, when alarmed, raises its head and inflates its thorax, causing it to look like the head of a snake.",
-
-    "About one-third of all insect species are carnivorous, and most hunt for their food rather than eating decaying meat or dung."
-]
+  "About one-third of all insect species are carnivorous, and most hunt for their food rather than eating decaying meat or dung.",
+];

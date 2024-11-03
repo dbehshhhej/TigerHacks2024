@@ -1,45 +1,55 @@
-export function projectDaysRemaining(forecastJSON, remainingDegrees, GDDBase)
-{
+export function projectDaysRemaining(
+  forecastJSON,
+  city,
+  remainingDegrees,
+  GDDBase
+) {
+  // Ensure city exists in data
+  if (!forecastJSON[city]) {
+    console.error("City data not found");
+    return null;
+  }
 
-    // Calculate GDD for each day, append it to an array
-    let dailyGDDs = [];
-    let i = 0;
-    for (const day of forecastJSON.data.daily) {
-        let minTemp = day.temp.min;
-        let maxTemp = day.temp.max;
+  // Calculate GDD for each day and store in array
+  let dailyGDDs = [];
+  let i = 0;
+  for (const date in forecastJSON[city]) {
+    let minTemp = forecastJSON[city][date].LowTemp;
+    let maxTemp = forecastJSON[city][date].HighTemp;
+    let GDDCalculated = (minTemp + maxTemp) / 2 - GDDBase;
+    dailyGDDs[i] = GDDCalculated;
+    i++;
+  }
 
-        let GDDCalculated = ((minTemp+maxTemp)/2)-GDDBase;
-        dailyGDDs[i] = GDDCalculated;
-        i++
-    }    
+  // Calculate daily change in GDDs
+  let changeInGDDDaily = 0;
+  for (let j = 1; j <= 7; j++) {
+    changeInGDDDaily += dailyGDDs[j] - dailyGDDs[j - 1];
+  }
+  changeInGDDDaily /= 8;
 
-    // Using the dailyGDDs, estimate change in gdd per day
-    let changeInGDDDaily = ((dailyGDDs[1]-dailyGDDs[0]) + (dailyGDDs[2]-dailyGDDs[1]) + (dailyGDDs[3]-dailyGDDs[2]) + (dailyGDDs[4]-dailyGDDs[3]) + (dailyGDDs[5]-dailyGDDs[4]) + (dailyGDDs[6]-dailyGDDs[5]) + (dailyGDDs[7]-dailyGDDs[6])) / 8;
-    let daysRemaining = 0;
-    if(changeInGDDDaily <= 0){
-        return null;
+  if (changeInGDDDaily <= 0) {
+    return null;
+  }
+
+  // Count days required to reach remaining degrees
+  let daysRemaining = 0;
+  for (const dailyDegrees of dailyGDDs) {
+    if (remainingDegrees > 0) {
+      remainingDegrees -= dailyDegrees;
+      daysRemaining++;
+    } else {
+      return daysRemaining;
     }
+  }
 
-    // Count the days GDDs towards the remaining degress, will return if the remaining degrees reaches 0 within the 8 days, otherwise will continue beyond.
-    for(const dailyDegrees of dailyGDDs){
-        if(remainingDegrees >= 0){
-            remainingDegrees -= dailyDegrees;
-            daysRemaining++;
-        } else {
-            return daysRemaining;
-        }
-    }
+  // Project forward if remaining degrees not reached
+  let nextDay = dailyGDDs[7] + changeInGDDDaily;
+  while (remainingDegrees > 0) {
+    remainingDegrees -= nextDay;
+    nextDay += changeInGDDDaily;
+    daysRemaining++;
+  }
 
-
-    // Project it forward beyond the 8 days
-    let startingPointGDD = dailyGDDs[7];
-    let nextDay = startingPointGDD + changeInGDDDaily;
-
-    while(theoreticalRemaining >= 0){
-        remainingDegrees -= nextDay;
-        nextDay += changeInGDDDaily;
-        daysRemaining++;
-    }
-    return daysRemaining;
-
+  return daysRemaining;
 }

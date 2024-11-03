@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     KS: ["Manhattan", "Topeka", "Wichita"],
     IA: ["Des Moines", "Cedar Rapids", "Iowa City"],
     MO: ["Columbia", "Kansas City", "St. Louis"],
+    AK: ["Juneau", "Anchorage", "Denali"],
   };
 
   // Function to update cities based on selected state

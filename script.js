@@ -42,6 +42,10 @@ let demoModeFuture = true; // Demo mode for calculating into the future
 
 // Event listener, activated on click
 calculateButton.addEventListener("click", async function () {
+  plant = document.querySelector("#plant").value;
+  state = document.querySelector("#state").value;
+  city = document.querySelector("#city").value;
+
   let gddAccum = 0; // Accumulated GDD so far
 
   let plantDate = new Date(directPlantDate.value); // Reformatted planting date
@@ -87,20 +91,35 @@ calculateButton.addEventListener("click", async function () {
   if (!demoModeFuture) {
     // Calculates remaining days using forecast
     remainingGDD = emergenceGDD[plant] - currentAcumGDD;
-    futureData = await getFutureForecast(city, state);
+    // futureData = await getFutureForecast(city, state);
+    let futureData = JSON.parse(localStorage.getItem("TempData.json"));
     daysRemaining = projectDaysRemaining(futureData, remainingGDD);
 
     // Updates emergence box based on conditions
     if (daysTillEmerge == 0) {
       updateEmergenceBox("Your crops have emerged!");
-    } else
+    } else if (daysTillEmerge == null) {
+      updateEmergenceBox(
+        `It is too cold for your crops to emerge. Maybe try somewhere else.`
+      );
+    } else {
       updateEmergenceBox(
         `You have ${daysTillEmerge} days until your crops emerge!`
       );
+    }
   } else {
     // Loops through FUTURE dates using dataset
     console.log("Future calc starting here");
+    const MAX_ITERATIONS = 100;
     while (gddAccum < emergenceGDD[plant]) {
+      if (daysTillEmerge >= MAX_ITERATIONS) {
+        console.warn(
+          "Reached maximum iteration limit; setting daysTillEmerge to null."
+        );
+        daysTillEmerge = null;
+        break;
+      }
+
       let tempEntry = await getTempData(placeholderDate, city); // Pulls array of temperatures from JSON
       let highTemp = tempEntry[0];
       let lowTemp = tempEntry[1];
@@ -113,10 +132,15 @@ calculateButton.addEventListener("click", async function () {
     // Updates emergence box based on conditions
     if (daysTillEmerge == 0) {
       updateEmergenceBox("Your crops have emerged!");
-    } else
+    } else if (daysTillEmerge == null) {
+      updateEmergenceBox(
+        `It is too cold for your crops to emerge. Maybe try somewhere else.`
+      );
+    } else {
       updateEmergenceBox(
         `You have ${daysTillEmerge} days until your crops emerge!`
       );
+    }
 
     updateAccumGDDBox(gddAccum);
     updatePestsTextBox(gddAccum, pestData);
