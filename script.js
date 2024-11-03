@@ -21,7 +21,7 @@ let pestsPresentBox = document.querySelector("#pests-present");
 let calculateButton = document.querySelector("#calculate-button");
 let accumGDDBox = document.querySelector("#gdd-accum");
 
-let demoModePast = false; // Demo mode for calculating up to the present date
+let demoModePast = true; // Demo mode for calculating up to the present date
 let demoModeFuture = true; // Demo mode for calculating into the future
 
 // let lat = 2389752; // Temp vals, set from function calls
@@ -67,8 +67,8 @@ calculateButton.addEventListener("click", async function () {
     }
   }
 
-  let daysTillEmerge = 0;
-  let remainingGDD = 0; // init
+  let daysTillEmerge = 0; // initialize variable
+  let remainingGDD = 0; // initialize variable
 
   // CALCULATE DAYS REMAINING
   if (!demoModeFuture) {
@@ -81,6 +81,7 @@ calculateButton.addEventListener("click", async function () {
     );
   } else {
     // Loops through FUTURE dates using dataset
+    console.log("Future calc starting here");
     while (gddAccum < emergenceGDD[plant]) {
       let tempEntry = await getTempData(placeholderDate, city); // Pulls array of temperatures from JSON
       let highTemp = tempEntry[0];
