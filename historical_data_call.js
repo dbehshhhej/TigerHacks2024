@@ -14,7 +14,7 @@ export async function getHistoricalData(lat, lon, unixTC)
             'maxTemp': afternoonCall,
             'minTemp': morningCall,
         };
-
+        
         return dayData;
     } catch (error) {
         console.error('Error fetching historical data:', error);
