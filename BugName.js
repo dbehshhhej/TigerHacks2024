@@ -45,7 +45,28 @@ const RandBugFact =
 
     "A particular Hawk Moth caterpillar from Brazil, when alarmed, raises its head and inflates its thorax, causing it to look like the head of a snake.",
 
-    "About one-third of all insect species are carnivorous, and most hunt for their food rather than eating decaying meat or dung."
+    "About one-third of all insect species are carnivorous, and most hunt for their food rather than eating decaying meat or dung.",
+    
+    "Bugs make up 90% of life on Earth.",
+
+    "Beetles are the most common species of insects",
+
+    "The Antarctic Midge is the only known insect species living in Antarctica. It's life span is about a week.",
+
+    "Termites eat more when listening to rock music. Ok, thats not entirely true. It appears that vibrational frequencies affect termites eating habits. That frequency is similar to rock music, just under 3000 kHz.",
+
+    "What do ants, humans, and crows have in common? They are the only 3 species that fight battle in formations.",
+
+    "Fruit flies were the first species of insects to be sent into outer space.",
+
+    "Fireflies and ladybugs are a form of beetle.",
+
+    "A lady bug might eat more than 5,000 insects in its lifetime.",
+
+    "Male horseflies can fly up to 90 mph",
+
+    "A group of butterflies is known as a flutter."
+
 ]
     
 
