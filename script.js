@@ -23,8 +23,21 @@ let pestsPresentBox = document.querySelector("#pests-present");
 let calculateButton = document.querySelector("#calculate-button");
 let accumGDDBox = document.querySelector("#gdd-accum");
 
-let demoModePast = true; // Demo mode for calculating up to the present date
-let demoModeFuture = true; // Demo mode for calculating into the future
+let demoModePast = false; // Demo mode for calculating up to the present date
+let demoModeFuture = false; // Demo mode for calculating into the future
+
+// Updates values on change
+document.querySelector("#plant").addEventListener("change", function () {
+  plant = document.querySelector("#plant").value;
+});
+
+document.querySelector("#state").addEventListener("change", function () {
+  state = document.querySelector("#state").value;
+});
+
+document.querySelector("#city").addEventListener("change", function () {
+  city = document.querySelector("#city").value;
+});
 
 // let lat = 2389752; // Temp vals, set from function calls
 // let long = 1492385702;
