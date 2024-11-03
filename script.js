@@ -19,6 +19,7 @@ let directCurrentDate = document.querySelector("#current-date");
 let emergenceBox = document.querySelector("#emergence");
 let pestsPresentBox = document.querySelector("#pests-present");
 let calculateButton = document.querySelector("#calculate-button");
+let accumGDDBox = document.querySelector("#gdd-accum");
 
 let demoModePast = true; // Demo mode for calculating up to the present date
 let demoModeFuture = true; // Demo mode for calculating into the future
@@ -94,6 +95,7 @@ calculateButton.addEventListener("click", async function () {
       `You have ${daysTillEmerge} days until your crops emerge!`
     ); // Updates text box with emergence dates
 
+    updateAccumGDDBox(gddAccum);
     updatePestsTextBox(gddAccum, pestData);
   }
 });
@@ -153,4 +155,8 @@ function updatePestsTextBox(gddAccum, pestData) {
 
 function updateEmergenceBox(message) {
   emergenceBox.textContent = message;
+}
+
+function updateAccumGDDBox(message) {
+  accumGDDBox.textContent = message;
 }
