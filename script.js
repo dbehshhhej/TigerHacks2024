@@ -22,7 +22,11 @@ let calculateButton = document.querySelector("#calculate-button");
 let accumGDDBox = document.querySelector("#gdd-accum");
 
 let demoModePast = false; // Demo mode for calculating up to the present date
+<<<<<<< Updated upstream
 let demoModeFuture = true; // Demo mode for calculating into the future
+=======
+let demoModeFuture = false; // Demo mode for calculating into the future
+>>>>>>> Stashed changes
 
 // let lat = 2389752; // Temp vals, set from function calls
 // let long = 1492385702;
@@ -46,7 +50,7 @@ calculateButton.addEventListener("click", async function () {
     // Acual historical data calculation goes here
     console.log(city, state, directPlantDate.value, directCurrentDate.value);
     await saveHistoricalData(
-      city.value,
+      city,
       state.value,
       directPlantDate.value,
       directCurrentDate.value

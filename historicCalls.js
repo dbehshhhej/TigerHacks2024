@@ -9,14 +9,14 @@ export async function saveHistoricalData(
 ) {
   try {
     // Wait for coordinates to be fetched
-    var data = await getCoordinates(cityName.value, state.value);
-    console.log(data, city, state);
+    var data = await getCoordinates(cityName, state);
+    console.log(data, cityName, state);
     const latitude = data.latitude;
     const longitude = data.longitude;
     var plantDate = new Date(plantDateRaw);
     var plantDateUnix = plantDate.getTime();
     plantDateUnix = toMidnightUnix(plantDateUnix);
-    var currentDate = new date(currentDateRaw);
+    var currentDate = new Date(currentDateRaw);
     var currentDateUnix = currentDate.getTime();
 
     // let data2 = {
@@ -57,8 +57,15 @@ export async function saveHistoricalData(
       console.log(error);
     }
     for (let day = plantDateUnix; day < currentDateUnix; day += 86400) {
+      var storage = JSON.parse(localStorage.getItem("Historical_data_GDD"));
+      console.log(storage);
+      if(storage.cities[cityName].dates[day] != null)
+      {
+        console.log("Data found in local, not pulling API!");
+        break;
+      }
       // Make a call to get data, if needed
-
+      console.log("Data not found in local, pulling API!");
       var temps = await getHistoricalData(latitude, longitude, day);
       console.log(day);
       console.log(temps);
