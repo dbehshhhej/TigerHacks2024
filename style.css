@@ -138,6 +138,12 @@ select:focus,
   width: 50px;
 }
 
+.ant {
+  float: right;
+  width: 75px;
+  justify-content: right;
+}
+
 .disabled {
   pointer-events: none;
   opacity: 0.6;
